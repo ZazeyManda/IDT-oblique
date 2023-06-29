@@ -1,0 +1,6 @@
+{
+    "age":{"type":"int", "min":0},
+    "priors_count":{"type":"int", "min":0},
+    "sex":{"type":"binary"},
+    "c_charge_degree":{"type":"binary"}
+}

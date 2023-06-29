@@ -1,0 +1,13 @@
+{
+    "lotsize":{"type":"int", "min": 0},
+    "bedrooms":{"type":"int", "min": 0},
+    "bathrooms":{"type":"int", "min": 0},
+    "stories":{"type":"int", "min": 0},
+    "driveway":{"type":"binary"},
+    "recreation":{"type":"binary"},
+    "fullbase":{"type":"binary"},
+    "gasheat":{"type":"binary"},
+    "aircon":{"type":"binary"},
+    "garage":{"type":"int", "min": 0},
+    "prefer":{"type":"binary"}
+}

@@ -1,0 +1,11 @@
+{
+    "SPEED":{"type":"int", "min": 0},
+    "HARD_DRIVE":{"type":"int", "min": 0},
+    "RAM":{"type":"int", "min": 0},
+    "SCREEN":{"type":"int", "min": 0},
+    "CD":{"type":"binary"},
+    "MULTI":{"type":"binary"},
+    "FIRM":{"type":"binary"},
+    "ADS":{"type":"int", "min": 0},
+    "TREND":{"type":"int"}
+}

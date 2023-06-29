@@ -1,0 +1,12 @@
+{
+    "ammonia":{"type":"real", "min":0},
+    "arsenic":{"type":"real","min":0},
+    "cadmium":{"type":"real", "min":0},
+    "copper":{"type":"real", "min":0},
+    "viruses":{"type":"real", "min":0},
+    "lead":{"type":"real", "min":0},
+    "nitrates":{"type":"real", "min":0},
+    "mercury":{"type":"real", "min":0},
+    "selenium":{"type":"real", "min":0},
+    "uranium":{"type":"real", "min":0}
+}

@@ -1,0 +1,5 @@
+{
+    "age":{"type":"int", "min":0},
+    "operation year":{"type":"int", "min":58, "max":70},
+    "nodes": {"type":"int", "min":0}
+}

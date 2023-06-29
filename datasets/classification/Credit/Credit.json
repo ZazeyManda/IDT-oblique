@@ -1,0 +1,7 @@
+{
+    "reports":{"type":"int", "min":0},
+    "income":{"type":"real", "min":0},
+    "share":{"type":"real", "min":0},
+    "homeowner":{"type":"binary"},
+    "selfemp":{"type":"binary"}
+}

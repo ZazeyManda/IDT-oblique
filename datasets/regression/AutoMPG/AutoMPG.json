@@ -1,0 +1,7 @@
+{
+    "cylinders":{"type":"int", "min": 0},
+    "displacement":{"type":"real", "min": 0},
+    "horsepower":{"type":"int", "min": 0},
+    "weight":{"type":"int", "min": 0},
+    "model year":{"type":"int", "min": 0}
+}

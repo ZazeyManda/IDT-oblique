@@ -108,36 +108,3 @@ class Labelling:
                     y[i] = 1
                 else: y[j] = 0
         return y
-
-# label = Labelling()
-# df = pd.read_csv('credit.csv')
-# label.give_labels(df)
-
-# df = pd.read_csv('credit.csv')
-# df = pd.read_csv('pima.csv', names=['X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7', 'X8', 'class'])
-# X = df.loc[:, df.columns != 'class']
-# y = df['class']
-# y_noise = label.noise(X, copy.deepcopy(y))
-# print(y)
-# print(y_noise)
-
-# y_new, changes = label.noise(X, copy.deepcopy(y))
-# print('new y\n', y_new)
-# print('#######################')
-# print('old y\n', y)
-# print('#######################')
-# print('old y vector has so many 1s:', y.sum())
-# print('new y vector has so many 1s:', y_new.sum())
-# print('new y vector has so many changes: ', changes)
-# ordermat = np.array(label.get_ordermatrix(df.loc[:, df.columns != 'class']))
-# with open('ordermat.pickle', 'rb') as f: ordermat = np.array(pd.DataFrame(pickle.load(f)))
-# with open('ordermat.pickle', 'wb') as handle: pickle.dump(ordermat, handle, protocol=pickle.HIGHEST_PROTOCOL)
-# res = Isotonic(ordermat, df['class']).result
-# summ = round(sum([min(g, 1-g) for g in res]))
-# print(summ)
-
-# df = pd.read_csv('BankNote_Authentication.csv')
-# # df = pd.read_csv('data.txt')
-
-# #edges = [(idx_i, idx_j) for idx_i,i in X.iterrows() for idx_j,j in X.iterrows() if all(i <= j) and idx_i != idx_j]
-

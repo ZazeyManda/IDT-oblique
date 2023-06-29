@@ -1,0 +1,7 @@
+{
+    "GRE Score":{"type":"int", "min": 0, "max": 340},
+    "TOEFL Score":{"type":"int", "min": 0, "max": 120},
+    "LOR":{"type":"real", "min": 0, "max": 5},
+    "CGPA":{"type":"real", "min": 0, "max": 10}, 
+    "Research":{"type":"binary"}
+}

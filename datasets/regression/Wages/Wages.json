@@ -1,0 +1,9 @@
+{
+    "educ":{"type":"int", "min": 0},
+    "exper":{"type":"int", "min": 0},
+    "tenure":{"type":"int", "min": 0},
+    "male":{"type":"binary"},
+    "white":{"type":"binary"},
+    "numdep":{"type":"int", "min": 0},
+    "married":{"type":"binary"}
+}

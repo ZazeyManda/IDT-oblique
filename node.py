@@ -358,12 +358,6 @@ class Node:
             feature = features_coefficients
             expression = expression and (x[feature] not in value)
         return expression
-        # for idx, (feature_name, coefficient) in enumerate(features_coefficients):
-        #     expression = expression + str(coefficient) + '*' + f'{x[feature_name]}'
-        #     if idx is not len(features_coefficients) - 1:
-        #         expression = expression + '+'
-        # expression = expression + direction + str(value)
-        # return eval(expression)
     
     def ict_prune(self):
         """
@@ -405,8 +399,6 @@ class Node:
             g = np.append(g, MAX_VAL)
             # Determine new alpha value, for pruning
             for i,_ in enumerate(tree.non_leaves):
-                # tree.non_leaves[i].leaves = tree.non_leaves[i].calc_leaves()
-                # tree.non_leaves[i].non_leaves = tree.non_leaves[i].non_terminal_nodes()
                 g[k+1] = min(g[k+1], self.get_g(tree.non_leaves[i], amount_examples, gini))
 
             # Prune in nodes if equal to alpha pruning value
@@ -422,17 +414,6 @@ class Node:
             k = k + 1
         self.tree_sequence = tree_sequence
         self.g = g
-
-    # def prune_in_alpha(self, alpha: float, amount_examples, gini):
-    #     for i,_ in enumerate(self.non_leaves):
-    #         if self.get_g(self.non_leaves[i], amount_examples, gini) == alpha:
-    #             # Prune self
-    #             self.non_leaves[i].left_child = None
-    #             self.non_leaves[i].right_child = None
-    #             self.non_leaves[i].leaf = True
-    #     # Re-calculate the leaves and non-leaves of the tree
-    #     self.set_leaves_and_non_leaves()
-    #     return self
     
     def get_tree_given_beta(self, beta:float):
         for i in range(len(self.g) - 1):
@@ -466,7 +447,7 @@ class Node:
             return amount / total
         # Regression tree
         else:
-            return self.impurity(node.Y) #TODO: vragen hierover of deling (door total) moet: / total, krijg namelijk constant verschil elke keer van 1895,.....
+            return self.impurity(node.Y)
             
     
     def resub_tree(self, tree, total: int, gini) -> float:
@@ -579,9 +560,7 @@ class Node:
         if node.right_child:
             self.traverse(node.right_child, level+1)
 
-
-
-
+# Example of creating (monotone) oblique classification tree
 
 df = pd.read_csv('datasets/artificial/2features/2features.pickle_negative_labelling_9.csv')
 TARGET = 'class'
@@ -596,58 +575,7 @@ y = y_train[TARGET]
 not_local_not_global = Node(copy.deepcopy(X), copy.deepcopy(y), oblique=True, positive=False)
 not_local_not_global.plot_leaves('Effect of not enforcing any monotonicity constraint')
 
-# local_not_global = Node(copy.deepcopy(X), copy.deepcopy(y), oblique=True, positive=True)
-# local_not_global.plot_leaves('Effect of enforcing the local but not the global monotonicity constraint')
-
-
-# root.print_tree()
-      
-#names=['X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7', 'X8', 'class']
-# df2 = pd.read_csv('BankNote_Authentication.csv')
-# df2 = pd.read_csv('pima.csv', names=['X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7', 'X8', 'class'])
-# X2 = df2.loc[:, df2.columns != 'class']
-# Y2 = df2['class']
-# root2 = Node(X2, Y2, oblique=False, positive=False)
-# root2.prune()
-# print(root2.g * 2)
-
-# from sklearn.tree import DecisionTreeClassifier
-# from sklearn import tree
-# clf = DecisionTreeClassifier(random_state=0)
-# ccp_alphas = clf.cost_complexity_pruning_path(X2, Y2).ccp_alphas
-# print(ccp_alphas)
-# clfs = []
-# for ccp_alpha in ccp_alphas:
-#     clf = DecisionTreeClassifier(random_state=0, ccp_alpha=ccp_alpha)
-#     clf.fit(X2, Y2)
-#     clfs.append(clf)
-
-# t = root2.tree_sequence[1]
-# t2 = clfs[1]
-# tree.plot_tree(t2)
-# plt.show()
-# tree.export_graphviz(t2,out_file='tree.dot')
-
-# print(all(list(map(lambda x : round(x[0], 8) == round(x[1], 8), zip((root2.g * 2), ccp_alphas)))))
-
-# print(path.ccp_alphas[9] == path.ccp_alphas[10])
-
-# df = pd.read_csv('datasets/regression/Kuiper/3.Kuiper.csv')
-# import json
-# types = json.load(open('datasets/regression/Kuiper/Kuiper.json'))
-# X = df.loc[:, df.columns != 'class']
-# # X = df[['Leather', 'Type']]
-# Y = df['class']
-# tree = Node(X, Y, positive=True, types=types, nmin=50, minleaf=50)
-# print('tree is generated')
-# tree.make_monotone_leaves() 
-# tree.print_tree()
-# y_testset = Y.to_numpy()
-# predictions = X.apply(lambda x : tree.predict(x), axis = 1).to_numpy()
-
-# Example with categorical
-# dfC = pd.read_csv('credit_categorical.csv') 
-# XC = dfC.loc[:, dfC.columns != 'class']
-# YC = dfC['class']
-# rootC = Node(XC, YC, oblique = False, positive = False, categorical_features=['categorical'])
-# rootC.make_monotone_leaves()
+local_global = Node(copy.deepcopy(X), copy.deepcopy(y), oblique=True, positive=True)
+local_global.make_monotone_leaves()
+local_global.ict_prune()
+local_global.plot_leaves('Effect of enforcing the local but not the global monotonicity constraint')

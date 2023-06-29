@@ -1,0 +1,7 @@
+{
+    "Mileage":{"type":"int", "min": 0},
+    "Cylinder":{"type":"int", "min": 0},
+    "Cruise":{"type":"binary"},
+    "Leather":{"type":"binary"},
+    "Type":{"type":"categorical"}
+}

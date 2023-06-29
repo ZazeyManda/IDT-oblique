@@ -1,0 +1,27 @@
+{
+    "Debt ratio %":{
+        "type":"real",
+        "min":0,
+        "max":1
+    },
+    "Current Liability to Current Assets":{
+        "type":"real",
+        "min":0,
+        "max":1
+    },
+    "Cash Flow to Liability":{
+        "type":"real",
+        "min":0,
+        "max":1
+    },
+    "Fixed Assets to Assets":{
+        "type":"real",
+        "min":0,
+        "max":1
+    },
+    "Net Income to Total Assets":{
+        "type":"real",
+        "min":0,
+        "max":1
+    }
+}

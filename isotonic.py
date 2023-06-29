@@ -27,7 +27,7 @@ class Isotonic:
         labels = np.pad(labels, ((1,0), (1,0)), 'constant', constant_values=-1)
         while not ready:
             labels.fill(0)
-            labels[1, 1:] = np.array([1, 1000000000000000]) #TODO: vraag Ad wat deze grote constant is? kan die worden vervangen door upperbound?
+            labels[1, 1:] = np.array([1, 1000000000000000])
             queue = np.array([0,1])
             index = 1
             while labels[n, 1] == 0:
@@ -120,6 +120,4 @@ class Isotonic:
                     g_star_value = np.concatenate((np.array(low['g_star_value']), np.array(up['g_star_value'])))
         result = pd.DataFrame({'g_star_index': g_star_index, 'g_star_value': g_star_value})
         return result
-
-# Isotonic(np.array([[0,1,1,1], [0,0,0,1], [0,0,0,1], [0,0,0,0]]), np.array([0.4, 0.2, 0.6, 0.4]))
     
