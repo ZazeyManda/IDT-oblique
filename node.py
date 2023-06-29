@@ -7,7 +7,6 @@ import itertools
 import copy
 import sys
 
-
 EPSILON = sys.float_info.epsilon
 MAX_VAL = float('inf')
 USE_MPL = True
