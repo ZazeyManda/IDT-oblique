@@ -1,0 +1,2495 @@
+Script started on Thu 15 Jun 2023 12:19:22 PM CEST
+File under consideration is: 2features.pickle_negative_labelling_0.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 12:46:15.713953
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1 1 1 1 1]
+ [0 0 0 1 1 0 1 1 1 0 0 1 1]
+ [0 0 0 0 1 0 1 1 1 0 0 1 1]
+ [0 0 0 0 0 0 0 1 1 0 0 1 1]
+ [0 0 0 0 0 0 1 0 0 1 1 1 1]
+ [0 0 0 0 0 0 0 1 1 0 1 1 1]
+ [0 0 0 0 0 0 0 0 1 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0 0 1 0 1]
+ [0 0 0 0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1]
+ [0 0 0 1 0 1 1 0 1]
+ [0 0 0 0 0 0 1 0 1]
+ [0 0 0 0 0 1 0 1 1]
+ [0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1]
+ [0 0 0 0 1 1 1]
+ [0 0 0 0 1 0 1]
+ [0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.5266666666666668 
+1) ; 0.7375*X1+0.7196*X2 <= -0.00807588693640598 ; 72 ; 0.1094 ; 0.12500000000000022 
+2) ; 0.1858*X1+0.2119*X2 <= -0.02392280659097474 ; 55 ; 0.0674 ; 0.07272727272727317 ; *
+2) ; 0.1858*X1+0.2119*X2 > -0.02392280659097474 ; 17 ; 0.2076 ; 0.29411764705882376 
+3) ; X1 <= -0.7315134137573491 ; 9 ; 0.0 ; 0.10416666666666788 ; *
+3) ; X1 > -0.7315134137573491 ; 8 ; 0.2344 ; 0.6250000000000013 ; *
+1) ; 0.7375*X1+0.7196*X2 > -0.00807588693640598 ; 78 ; 0.092 ; 0.8974358974358981 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 12:46:46.412519
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1 1]
+ [0 0 1 0 1 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1 1 1]
+ [0 1 1 0 1 1 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1 0 1]
+ [0 0 0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 1 0 1 0 1]
+ [0 0 0 0 0 0 1 0 0 1 0]
+ [0 0 0 0 0 0 1 0 0 0 0]
+ [0 0 0 0 0 0 1 0 1 1 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1]
+ [0 1 0 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 1 0 1 1]
+ [0 0 0 0 0 1 0 0 0]
+ [0 0 0 0 0 1 0 1 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1]
+ [0 0 0 1 1 1 1]
+ [0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0]
+ [0 0 0 0 1 0 1]
+ [0 0 0 0 1 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 0]
+ [0 0 0 1 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.5266666666666668 
+1) ; 0.7375*X1+0.7196*X2 <= -0.008075886936405992 ; 72 ; 0.1094 ; 0.12500000000000022 
+2) ; 0.1858*X1+0.2119*X2 <= -0.023922806590974753 ; 55 ; 0.0674 ; 0.07272727272727339 ; *
+2) ; 0.1858*X1+0.2119*X2 > -0.023922806590974753 ; 17 ; 0.2076 ; 0.29411764705882376 
+3) ; X1 <= -0.7315134137573491 ; 9 ; 0.0 ; 0.09500000000000133 ; *
+3) ; X1 > -0.7315134137573491 ; 8 ; 0.2344 ; 0.6250000000000013 ; *
+1) ; 0.7375*X1+0.7196*X2 > -0.008075886936405992 ; 78 ; 0.092 ; 0.8974358974358979 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 12:47:15.758431
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.5266666666666668 
+1) ; 0.7375*X1+0.7196*X2 <= -0.00807588693640598 ; 72 ; 0.1094 ; 0.12500000000000022 
+2) ; 0.1858*X1+0.2119*X2 <= -0.02392280659097474 ; 55 ; 0.0674 ; 0.07272727272727295 
+3) ; X1 <= -1.1631619782954643 ; 8 ; 0.1875 ; 0.2500000000000002 ; *
+3) ; X1 > -1.1631619782954643 ; 47 ; 0.0407 ; 0.04255319148936192 
+4) ; X1 <= -0.098940428606924 ; 18 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; X1 > -0.098940428606924 ; 29 ; 0.0642 ; 0.06896551724137953 
+5) ; X1 <= 0.708469921531174 ; 16 ; 0.1094 ; 0.12500000000000022 
+6) ; X1 <= 0.4315933718309089 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+6) ; X1 > 0.4315933718309089 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+5) ; X1 > 0.708469921531174 ; 13 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; 0.1858*X1+0.2119*X2 > -0.02392280659097474 ; 17 ; 0.2076 ; 0.29411764705882376 
+3) ; X1 <= -0.7315134137573491 ; 9 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; X1 > -0.7315134137573491 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+1) ; 0.7375*X1+0.7196*X2 > -0.00807588693640598 ; 78 ; 0.092 ; 0.8974358974358977 
+2) ; X2 <= -0.08536777429915228 ; 37 ; 0.0263 ; 0.9729729729729732 
+3) ; X2 <= -0.6027901130633146 ; 23 ; 0.0 ; 1.0000000000000002 ; *
+3) ; X2 > -0.6027901130633146 ; 14 ; 0.0663 ; 0.9285714285714288 ; *
+2) ; X2 > -0.08536777429915228 ; 41 ; 0.1416 ; 0.829268292682927 
+3) ; X1 <= -0.6263244311305447 ; 16 ; 0.0586 ; 0.9375000000000002 
+4) ; X1 <= -1.0895819175382635 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+4) ; X1 > -1.0895819175382635 ; 8 ; 0.0 ; 1.0000000000000002 ; *
+3) ; X1 > -0.6263244311305447 ; 25 ; 0.1824 ; 0.7600000000000002 
+4) ; X2 <= 0.5844470528165586 ; 15 ; 0.1156 ; 0.8666666666666669 ; *
+4) ; X2 > 0.5844470528165586 ; 10 ; 0.24 ; 0.6000000000000002 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 12:47:21.916667
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.5266666666666668 
+1) ; 0.7375*X1+0.7196*X2 <= -0.008075886936405992 ; 72 ; 0.1094 ; 0.12500000000000022 
+2) ; 0.1858*X1+0.2119*X2 <= -0.023922806590974753 ; 55 ; 0.0674 ; 0.07272727272727295 
+3) ; X1 <= -1.1631619782954643 ; 8 ; 0.1875 ; 0.2500000000000002 ; *
+3) ; X1 > -1.1631619782954643 ; 47 ; 0.0407 ; 0.04255319148936192 
+4) ; -0.0232*X1+-0.0269*X2 <= 0.015775104051277408 ; 39 ; 0.025 ; 0.025641025641025862 
+5) ; 0.1434*X1+0.1644*X2 <= -0.03673925359758645 ; 29 ; 0.0 ; 2.220446049250313e-16 ; *
+5) ; 0.1434*X1+0.1644*X2 > -0.03673925359758645 ; 10 ; 0.09 ; 0.10000000000000023 ; *
+4) ; -0.0232*X1+-0.0269*X2 > 0.015775104051277408 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+2) ; 0.1858*X1+0.2119*X2 > -0.023922806590974753 ; 17 ; 0.2076 ; 0.29411764705882376 
+3) ; X1 <= -0.7315134137573491 ; 9 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; X1 > -0.7315134137573491 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+1) ; 0.7375*X1+0.7196*X2 > -0.008075886936405992 ; 78 ; 0.092 ; 0.8974358974358977 
+2) ; -0.1374*X1+-0.1812*X2 <= -0.13107973607624374 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+2) ; -0.1374*X1+-0.1812*X2 > -0.13107973607624374 ; 70 ; 0.0663 ; 0.9285714285714288 
+3) ; 0.1169*X1+0.0714*X2 <= -0.020921244582840295 ; 9 ; 0.2222 ; 0.6666666666666669 ; *
+3) ; 0.1169*X1+0.0714*X2 > -0.020921244582840295 ; 61 ; 0.0317 ; 0.9672131147540985 
+4) ; -0.1222*X1+-0.1063*X2 <= -0.0498933860308582 ; 18 ; 0.0988 ; 0.8888888888888891 
+5) ; X1 <= 0.9508668031838929 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+5) ; X1 > 0.9508668031838929 ; 10 ; 0.0 ; 1.0000000000000002 ; *
+4) ; -0.1222*X1+-0.1063*X2 > -0.0498933860308582 ; 43 ; 0.0 ; 1.0000000000000002 ; *
+File under consideration is: 2features.pickle_negative_labelling_1.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 13:17:20.413431
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 0 1 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 1 1 1]
+ [0 0 0 1 1 1]
+ [0 0 0 0 1 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5000000000000002 
+1) ; 0.7122*X1+0.6669*X2 <= 0.006935994924277265 ; 72 ; 0.0764 ; 0.08333333333333377 ; *
+1) ; 0.7122*X1+0.6669*X2 > 0.006935994924277265 ; 78 ; 0.1021 ; 0.884615384615385 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 13:17:41.325142
+ordermatrix:
+[[0 0 1 1 0 1 1 1 1]
+ [1 0 1 1 0 1 1 1 1]
+ [0 0 0 1 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1]
+ [1 1 1 1 0 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 1 0]]
+ordermatrix:
+[[0 1 0 1 1]
+ [0 0 0 1 1]
+ [1 1 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 0 1]
+ [1 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5000000000000002 
+1) ; 0.7122*X1+0.6669*X2 <= 0.006935994924277123 ; 72 ; 0.0764 ; 0.08333333333333377 ; *
+1) ; 0.7122*X1+0.6669*X2 > 0.006935994924277123 ; 78 ; 0.1021 ; 0.8846153846153852 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 13:17:53.821543
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5000000000000002 
+1) ; 0.7122*X1+0.6669*X2 <= 0.006935994924277265 ; 72 ; 0.0764 ; 0.08333333333333355 
+2) ; X1 <= -1.0406933246852093 ; 16 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; X1 > -1.0406933246852093 ; 56 ; 0.0957 ; 0.10714285714285736 
+3) ; X1 <= -0.550658707358969 ; 9 ; 0.2222 ; 0.33333333333333354 ; *
+3) ; X1 > -0.550658707358969 ; 47 ; 0.0598 ; 0.06382978723404277 
+4) ; X2 <= -0.9031027890621208 ; 12 ; 0.1389 ; 0.16666666666666688 ; *
+4) ; X2 > -0.9031027890621208 ; 35 ; 0.0278 ; 0.028571428571428793 
+5) ; X1 <= -0.28808456409151195 ; 15 ; 0.0622 ; 0.06666666666666689 ; *
+5) ; X1 > -0.28808456409151195 ; 20 ; 0.0 ; 2.220446049250313e-16 ; *
+1) ; 0.7122*X1+0.6669*X2 > 0.006935994924277265 ; 78 ; 0.1021 ; 0.8846153846153848 
+2) ; 0.1331*X1+0.1172*X2 <= 0.02402444907745913 ; 21 ; 0.2041 ; 0.7142857142857145 
+3) ; X1 <= 0.4422997097421407 ; 13 ; 0.071 ; 0.9230769230769234 ; *
+3) ; X1 > 0.4422997097421407 ; 8 ; 0.2344 ; 0.3750000000000002 ; *
+2) ; 0.1331*X1+0.1172*X2 > 0.02402444907745913 ; 57 ; 0.0499 ; 0.9473684210526317 
+3) ; X2 <= -0.2277340114923054 ; 28 ; 0.0 ; 1.0000000000000002 ; *
+3) ; X2 > -0.2277340114923054 ; 29 ; 0.0927 ; 0.8965517241379313 
+4) ; X1 <= 0.31389291752051973 ; 21 ; 0.0454 ; 0.9523809523809526 
+5) ; X2 <= 0.9081907212165456 ; 12 ; 0.0 ; 1.0000000000000002 ; *
+5) ; X2 > 0.9081907212165456 ; 9 ; 0.0988 ; 0.8888888888888891 ; *
+4) ; X1 > 0.31389291752051973 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 13:17:59.324072
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5000000000000002 
+1) ; 0.7122*X1+0.6669*X2 <= 0.006935994924277123 ; 72 ; 0.0764 ; 0.08333333333333355 
+2) ; -0.1763*X1+-0.2002*X2 <= 0.14348280506742622 ; 63 ; 0.0454 ; 0.04761904761904784 
+3) ; X2 <= -0.3123850988591307 ; 23 ; 0.0794 ; 0.08695652173913065 
+4) ; -0.2921*X1+-0.2983*X2 <= 0.07154777737133824 ; 12 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; -0.2921*X1+-0.2983*X2 > 0.07154777737133824 ; 11 ; 0.1488 ; 0.18181818181818205 ; *
+3) ; X2 > -0.3123850988591307 ; 40 ; 0.0244 ; 0.025000000000000223 
+4) ; 0.1623*X1+0.1897*X2 <= -0.029560836718365943 ; 32 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; 0.1623*X1+0.1897*X2 > -0.029560836718365943 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+2) ; -0.1763*X1+-0.2002*X2 > 0.14348280506742622 ; 9 ; 0.2222 ; 0.33333333333333354 ; *
+1) ; 0.7122*X1+0.6669*X2 > 0.006935994924277123 ; 78 ; 0.1021 ; 0.8846153846153848 
+2) ; 0.1331*X1+0.1172*X2 <= 0.02402444907745921 ; 21 ; 0.2041 ; 0.7142857142857145 
+3) ; X1 <= 0.4422997097421407 ; 13 ; 0.071 ; 0.9230769230769234 ; *
+3) ; X1 > 0.4422997097421407 ; 8 ; 0.2344 ; 0.3750000000000002 ; *
+2) ; 0.1331*X1+0.1172*X2 > 0.02402444907745921 ; 57 ; 0.0499 ; 0.9473684210526317 
+3) ; -0.4222*X1+-0.4087*X2 <= -0.262168057162523 ; 9 ; 0.2222 ; 0.6666666666666669 ; *
+3) ; -0.4222*X1+-0.4087*X2 > -0.262168057162523 ; 48 ; 0.0 ; 1.0000000000000002 ; *
+File under consideration is: 2features.pickle_negative_labelling_2.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 13:46:07.602287
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2425 ; 0.5866666666666669 
+1) ; 0.692*X1+0.6894*X2 <= -0.07766931930499378 ; 63 ; 0.1542 ; 0.1904761904761909 ; *
+1) ; 0.692*X1+0.6894*X2 > -0.07766931930499378 ; 87 ; 0.1105 ; 0.8735632183908051 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 13:46:11.989588
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2425 ; 0.5866666666666669 
+1) ; 0.692*X1+0.6894*X2 <= -0.0776693193049939 ; 63 ; 0.1542 ; 0.1904761904761909 ; *
+1) ; 0.692*X1+0.6894*X2 > -0.0776693193049939 ; 87 ; 0.1105 ; 0.8735632183908051 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 13:46:16.962778
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2425 ; 0.5866666666666669 
+1) ; 0.692*X1+0.6894*X2 <= -0.07766931930499378 ; 63 ; 0.1542 ; 0.1904761904761907 ; *
+1) ; 0.692*X1+0.6894*X2 > -0.07766931930499378 ; 87 ; 0.1105 ; 0.8735632183908049 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 13:46:21.524315
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2425 ; 0.5866666666666669 
+1) ; 0.692*X1+0.6894*X2 <= -0.0776693193049939 ; 63 ; 0.1542 ; 0.1904761904761907 ; *
+1) ; 0.692*X1+0.6894*X2 > -0.0776693193049939 ; 87 ; 0.1105 ; 0.8735632183908049 ; *
+File under consideration is: 2features.pickle_negative_labelling_3.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 14:14:19.173831
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2472 ; 0.5533333333333336 
+1) ; 0.6494*X1+0.6171*X2 <= -0.05834819161965215 ; 63 ; 0.1109 ; 0.12698412698412742 ; *
+1) ; 0.6494*X1+0.6171*X2 > -0.05834819161965215 ; 87 ; 0.1189 ; 0.8620689655172418 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 14:14:24.349007
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2472 ; 0.5533333333333336 
+1) ; 0.6494*X1+0.6171*X2 <= -0.05834819161965255 ; 63 ; 0.1109 ; 0.12698412698412742 ; *
+1) ; 0.6494*X1+0.6171*X2 > -0.05834819161965255 ; 87 ; 0.1189 ; 0.8620689655172418 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 14:14:29.570881
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2472 ; 0.5533333333333336 
+1) ; 0.6494*X1+0.6171*X2 <= -0.05834819161965215 ; 63 ; 0.1109 ; 0.1269841269841272 ; *
+1) ; 0.6494*X1+0.6171*X2 > -0.05834819161965215 ; 87 ; 0.1189 ; 0.8620689655172415 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 14:14:34.639745
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2472 ; 0.5533333333333336 
+1) ; 0.6494*X1+0.6171*X2 <= -0.05834819161965255 ; 63 ; 0.1109 ; 0.1269841269841272 ; *
+1) ; 0.6494*X1+0.6171*X2 > -0.05834819161965255 ; 87 ; 0.1189 ; 0.8620689655172415 ; *
+File under consideration is: 2features.pickle_negative_labelling_4.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 14:42:50.042333
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2464 ; 0.4400000000000002 
+1) ; 0.7122*X1+0.7031*X2 <= -0.06920162151168559 ; 64 ; 0.0447 ; 0.046875000000000444 ; *
+1) ; 0.7122*X1+0.7031*X2 > -0.06920162151168559 ; 86 ; 0.1959 ; 0.7325581395348839 
+2) ; X2 <= -0.8647111718944462 ; 12 ; 0.2222 ; 0.33333333333333376 ; *
+2) ; X2 > -0.8647111718944462 ; 74 ; 0.1616 ; 0.7972972972972977 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 14:42:54.798945
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2464 ; 0.4400000000000002 
+1) ; 0.7122*X1+0.7031*X2 <= -0.06920162151168546 ; 64 ; 0.0447 ; 0.046875000000000444 ; *
+1) ; 0.7122*X1+0.7031*X2 > -0.06920162151168546 ; 86 ; 0.1959 ; 0.7325581395348839 
+2) ; X2 <= -0.8647111718944462 ; 12 ; 0.2222 ; 0.33333333333333376 ; *
+2) ; X2 > -0.8647111718944462 ; 74 ; 0.1616 ; 0.7972972972972977 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 14:43:00.691655
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2464 ; 0.4400000000000002 
+1) ; 0.7122*X1+0.7031*X2 <= -0.06920162151168559 ; 64 ; 0.0447 ; 0.04687500000000022 ; *
+1) ; 0.7122*X1+0.7031*X2 > -0.06920162151168559 ; 86 ; 0.1959 ; 0.7325581395348839 
+2) ; X2 <= -0.8647111718944462 ; 12 ; 0.2222 ; 0.33333333333333354 ; *
+2) ; X2 > -0.8647111718944462 ; 74 ; 0.1616 ; 0.7972972972972975 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 14:43:04.539604
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2464 ; 0.4400000000000002 
+1) ; 0.7122*X1+0.7031*X2 <= -0.06920162151168546 ; 64 ; 0.0447 ; 0.04687500000000022 ; *
+1) ; 0.7122*X1+0.7031*X2 > -0.06920162151168546 ; 86 ; 0.1959 ; 0.7325581395348839 
+2) ; X2 <= -0.8647111718944462 ; 12 ; 0.2222 ; 0.33333333333333354 ; *
+2) ; X2 > -0.8647111718944462 ; 74 ; 0.1616 ; 0.7972972972972975 ; *
+File under consideration is: 2features.pickle_negative_labelling_5.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 15:10:28.974585
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2496 ; 0.4800000000000002 
+1) ; 0.6059*X1+0.6455*X2 <= 0.03577759073165173 ; 79 ; 0.1199 ; 0.13924050632911436 ; *
+1) ; 0.6059*X1+0.6455*X2 > 0.03577759073165173 ; 71 ; 0.121 ; 0.8591549295774652 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 15:10:32.875097
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2496 ; 0.4800000000000002 
+1) ; 0.6059*X1+0.6455*X2 <= 0.035777590731652036 ; 79 ; 0.1199 ; 0.13924050632911436 ; *
+1) ; 0.6059*X1+0.6455*X2 > 0.035777590731652036 ; 71 ; 0.121 ; 0.8591549295774652 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 15:10:37.138593
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2496 ; 0.4800000000000002 
+1) ; 0.6059*X1+0.6455*X2 <= 0.03577759073165173 ; 79 ; 0.1199 ; 0.13924050632911414 ; *
+1) ; 0.6059*X1+0.6455*X2 > 0.03577759073165173 ; 71 ; 0.121 ; 0.859154929577465 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 15:10:41.062074
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2496 ; 0.4800000000000002 
+1) ; 0.6059*X1+0.6455*X2 <= 0.035777590731652036 ; 79 ; 0.1199 ; 0.13924050632911414 ; *
+1) ; 0.6059*X1+0.6455*X2 > 0.035777590731652036 ; 71 ; 0.121 ; 0.859154929577465 ; *
+File under consideration is: 2features.pickle_negative_labelling_6.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 15:38:21.650521
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1 1]
+ [0 0 0 0 0 0 1 0 0 0 1]
+ [0 0 0 1 1 1 0 1 1 1 1]
+ [0 0 0 0 1 1 0 1 1 1 1]
+ [0 0 0 0 0 1 0 1 1 1 1]
+ [0 0 0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [0 0 1 1 0 1 1 1]
+ [0 0 0 1 0 1 1 1]
+ [0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 0 1 1]
+ [0 0 0 0 1 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 0 1]
+ [0 0 0 0 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2489 ; 0.4666666666666669 
+1) ; 0.5845*X1+0.6827*X2 <= 0.011166960326095056 ; 80 ; 0.1186 ; 0.13750000000000023 
+2) ; X1 <= 0.38996286245127854 ; 50 ; 0.0736 ; 0.08000000000000089 ; *
+2) ; X1 > 0.38996286245127854 ; 30 ; 0.1789 ; 0.23333333333333356 
+3) ; 0.3162*X1+0.578*X2 <= -0.2674937767883928 ; 22 ; 0.0826 ; 0.1282467532467544 ; *
+3) ; 0.3162*X1+0.578*X2 > -0.2674937767883928 ; 8 ; 0.2344 ; 0.5000000000000013 ; *
+1) ; 0.5845*X1+0.6827*X2 > 0.011166960326095056 ; 70 ; 0.1324 ; 0.8428571428571433 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 15:38:43.553567
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2489 ; 0.4666666666666669 
+1) ; 0.5845*X1+0.6827*X2 <= 0.011166960326094993 ; 80 ; 0.1186 ; 0.13750000000000046 ; *
+1) ; 0.5845*X1+0.6827*X2 > 0.011166960326094993 ; 70 ; 0.1324 ; 0.8428571428571433 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 15:38:47.632976
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2489 ; 0.4666666666666669 
+1) ; 0.5845*X1+0.6827*X2 <= 0.011166960326095056 ; 80 ; 0.1186 ; 0.13750000000000023 
+2) ; X1 <= 0.38996286245127854 ; 50 ; 0.0736 ; 0.08000000000000022 
+3) ; X1 <= -0.5873564982825583 ; 22 ; 0.1488 ; 0.18181818181818205 
+4) ; X2 <= 0.6921233889106477 ; 11 ; 0.1983 ; 0.27272727272727293 ; *
+4) ; X2 > 0.6921233889106477 ; 11 ; 0.0826 ; 0.09090909090909113 ; *
+3) ; X1 > -0.5873564982825583 ; 28 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; X1 > 0.38996286245127854 ; 30 ; 0.1789 ; 0.23333333333333356 
+3) ; 0.3162*X1+0.578*X2 <= -0.2674937767883928 ; 22 ; 0.0826 ; 0.09090909090909113 
+4) ; X1 <= 0.8277496363180836 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+4) ; X1 > 0.8277496363180836 ; 14 ; 0.0663 ; 0.07142857142857165 ; *
+3) ; 0.3162*X1+0.578*X2 > -0.2674937767883928 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+1) ; 0.5845*X1+0.6827*X2 > 0.011166960326095056 ; 70 ; 0.1324 ; 0.8428571428571431 
+2) ; X1 <= -1.2108375191694354 ; 8 ; 0.25 ; 0.5000000000000002 ; *
+2) ; X1 > -1.2108375191694354 ; 62 ; 0.1002 ; 0.8870967741935486 
+3) ; X2 <= 0.6058177132006628 ; 33 ; 0.1671 ; 0.7878787878787881 
+4) ; X1 <= 1.2742051434222725 ; 25 ; 0.1344 ; 0.8400000000000002 
+5) ; X2 <= -0.08991311877006668 ; 13 ; 0.0 ; 1.0000000000000002 ; *
+5) ; X2 > -0.08991311877006668 ; 12 ; 0.2222 ; 0.6666666666666669 ; *
+4) ; X1 > 1.2742051434222725 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+3) ; X2 > 0.6058177132006628 ; 29 ; 0.0 ; 1.0000000000000002 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 15:38:52.460980
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2489 ; 0.4666666666666669 
+1) ; 0.5845*X1+0.6827*X2 <= 0.011166960326094993 ; 80 ; 0.1186 ; 0.13750000000000023 ; *
+1) ; 0.5845*X1+0.6827*X2 > 0.011166960326094993 ; 70 ; 0.1324 ; 0.8428571428571431 ; *
+File under consideration is: 2features.pickle_negative_labelling_7.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 16:06:33.095607
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1 0 1 1]
+ [0 0 0 0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1 0 1 1]
+ [0 0 0 0 0 0 0 1 1 0 1 1]
+ [0 0 0 0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1]
+ [0 0 0 1 1 1 1]
+ [0 0 0 0 1 1 1]
+ [0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2489 ; 0.4666666666666669 
+1) ; 0.748*X1+0.7297*X2 <= 0.04891987870617548 ; 81 ; 0.0988 ; 0.11111111111111155 ; *
+1) ; 0.748*X1+0.7297*X2 > 0.04891987870617548 ; 69 ; 0.1025 ; 0.8840579710144935 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 16:06:59.835582
+ordermatrix:
+[[0 0 0 0 0 1 1 1 1 1 1]
+ [1 0 1 0 0 1 1 1 1 1 1]
+ [1 0 0 0 0 1 1 1 1 1 1]
+ [1 1 1 0 1 1 1 1 1 1 1]
+ [1 1 1 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 1 0 1]
+ [0 0 0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 0 0 1 1 1 1]
+ [1 0 0 1 1 1 1]
+ [1 1 0 1 1 1 1]
+ [0 0 0 0 1 1 1]
+ [0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 0 1 1 1]
+ [1 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2489 ; 0.4666666666666669 
+1) ; 0.748*X1+0.7297*X2 <= 0.048919878706175646 ; 81 ; 0.0988 ; 0.11111111111111177 ; *
+1) ; 0.748*X1+0.7297*X2 > 0.048919878706175646 ; 69 ; 0.1025 ; 0.8840579710144932 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 16:07:18.760938
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2489 ; 0.4666666666666669 
+1) ; 0.748*X1+0.7297*X2 <= 0.04891987870617548 ; 81 ; 0.0988 ; 0.11111111111111133 
+2) ; X2 <= -0.8875140888000261 ; 16 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; X2 > -0.8875140888000261 ; 65 ; 0.1193 ; 0.1384615384615387 
+3) ; X2 <= -0.5203462110230792 ; 11 ; 0.2479 ; 0.45454545454545475 ; *
+3) ; X2 > -0.5203462110230792 ; 54 ; 0.0686 ; 0.07407407407407429 
+4) ; 0.0442*X1+0.0682*X2 <= 0.020531174919947714 ; 45 ; 0.0425 ; 0.04444444444444467 
+5) ; X1 <= -0.445843877103934 ; 23 ; 0.0794 ; 0.08695652173913065 
+6) ; X2 <= 0.5865059657185113 ; 10 ; 0.16 ; 0.20000000000000023 ; *
+6) ; X2 > 0.5865059657185113 ; 13 ; 0.0 ; 2.220446049250313e-16 ; *
+5) ; X1 > -0.445843877103934 ; 22 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; 0.0442*X1+0.0682*X2 > 0.020531174919947714 ; 9 ; 0.1728 ; 0.22222222222222243 ; *
+1) ; 0.748*X1+0.7297*X2 > 0.04891987870617548 ; 69 ; 0.1025 ; 0.884057971014493 
+2) ; 0.1258*X1+0.1131*X2 <= 0.025667965371532365 ; 16 ; 0.1875 ; 0.7500000000000002 
+3) ; X1 <= -0.5060228368811757 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+3) ; X1 > -0.5060228368811757 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+2) ; 0.1258*X1+0.1131*X2 > 0.025667965371532365 ; 53 ; 0.0698 ; 0.9245283018867927 
+3) ; X1 <= -0.33720094628670666 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+3) ; X1 > -0.33720094628670666 ; 45 ; 0.0425 ; 0.9555555555555558 
+4) ; X1 <= 1.263668462655653 ; 37 ; 0.0263 ; 0.9729729729729732 
+5) ; X2 <= -0.03226768549990852 ; 22 ; 0.0 ; 1.0000000000000002 ; *
+5) ; X2 > -0.03226768549990852 ; 15 ; 0.0622 ; 0.9333333333333336 ; *
+4) ; X1 > 1.263668462655653 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 16:07:24.440187
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2489 ; 0.4666666666666669 
+1) ; 0.748*X1+0.7297*X2 <= 0.048919878706175646 ; 81 ; 0.0988 ; 0.11111111111111133 
+2) ; -0.0194*X1+-0.019*X2 <= 0.0007222040814932424 ; 11 ; 0.2314 ; 0.36363636363636387 ; *
+2) ; -0.0194*X1+-0.019*X2 > 0.0007222040814932424 ; 70 ; 0.0663 ; 0.07142857142857165 
+3) ; -0.2315*X1+-0.2369*X2 <= 0.09104143679939124 ; 45 ; 0.0217 ; 0.022222222222222445 
+4) ; 0.2726*X1+0.2541*X2 <= -0.021477616434209697 ; 37 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; 0.2726*X1+0.2541*X2 > -0.021477616434209697 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+3) ; -0.2315*X1+-0.2369*X2 > 0.09104143679939124 ; 25 ; 0.1344 ; 0.16000000000000023 
+4) ; X1 <= -0.445843877103934 ; 13 ; 0.1775 ; 0.230769230769231 ; *
+4) ; X1 > -0.445843877103934 ; 12 ; 0.0764 ; 0.08333333333333355 ; *
+1) ; 0.748*X1+0.7297*X2 > 0.048919878706175646 ; 69 ; 0.1025 ; 0.884057971014493 
+2) ; 0.1258*X1+0.1131*X2 <= 0.02566796537153237 ; 16 ; 0.1875 ; 0.7500000000000002 
+3) ; X1 <= -0.5060228368811757 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+3) ; X1 > -0.5060228368811757 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+2) ; 0.1258*X1+0.1131*X2 > 0.02566796537153237 ; 53 ; 0.0698 ; 0.9245283018867927 
+3) ; X1 <= -0.33720094628670666 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+3) ; X1 > -0.33720094628670666 ; 45 ; 0.0425 ; 0.9555555555555558 
+4) ; X1 <= 1.263668462655653 ; 37 ; 0.0263 ; 0.9729729729729732 
+5) ; -0.081*X1+-0.076*X2 <= -0.041682133402466105 ; 10 ; 0.09 ; 0.9000000000000002 ; *
+5) ; -0.081*X1+-0.076*X2 > -0.041682133402466105 ; 27 ; 0.0 ; 1.0000000000000002 ; *
+4) ; X1 > 1.263668462655653 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+File under consideration is: 2features.pickle_negative_labelling_8.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 16:37:31.092941
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1]
+ [0 0 1 0 1 0 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1]
+ [0 0 0 1 1 1 1]
+ [0 0 0 0 1 1 1]
+ [0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2446 ; 0.5733333333333336 
+1) ; 0.6198*X1+0.6615*X2 <= -0.10969906394749075 ; 56 ; 0.1224 ; 0.14285714285714352 ; *
+1) ; 0.6198*X1+0.6615*X2 > -0.10969906394749075 ; 94 ; 0.1412 ; 0.8297872340425534 
+2) ; 0.1531*X1+0.1219*X2 <= -0.015960992177624672 ; 23 ; 0.2382 ; 0.6086956521739133 
+3) ; 0.8666*X1+1.029*X2 <= 0.14937677648315273 ; 15 ; 0.24 ; 0.40000000000000113 ; *
+3) ; 0.8666*X1+1.029*X2 > 0.14937677648315273 ; 8 ; 0.0 ; 0.8571428571428583 ; *
+2) ; 0.1531*X1+0.1219*X2 > -0.015960992177624672 ; 71 ; 0.0889 ; 0.9014084507042258 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 16:37:50.160171
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1]
+ [0 0 1 0 1 0 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 1 0 1 1]
+ [0 0 0 0 0 0 1 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1]
+ [0 0 0 1 1 1 1]
+ [0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 1]
+ [0 0 0 0 1 0 1]
+ [0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2446 ; 0.5733333333333336 
+1) ; 0.6198*X1+0.6615*X2 <= -0.10969906394749063 ; 56 ; 0.1224 ; 0.14285714285714352 ; *
+1) ; 0.6198*X1+0.6615*X2 > -0.10969906394749063 ; 94 ; 0.1412 ; 0.8297872340425534 
+2) ; 0.1531*X1+0.1219*X2 <= -0.01596099217762465 ; 23 ; 0.2382 ; 0.6086956521739133 
+3) ; 0.8666*X1+1.029*X2 <= 0.14937677648315237 ; 15 ; 0.24 ; 0.40000000000000113 ; *
+3) ; 0.8666*X1+1.029*X2 > 0.14937677648315237 ; 8 ; 0.0 ; 0.8400000000000011 ; *
+2) ; 0.1531*X1+0.1219*X2 > -0.01596099217762465 ; 71 ; 0.0889 ; 0.9014084507042258 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 16:38:08.949687
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2446 ; 0.5733333333333336 
+1) ; 0.6198*X1+0.6615*X2 <= -0.10969906394749075 ; 56 ; 0.1224 ; 0.14285714285714307 
+2) ; 0.1559*X1+0.2033*X2 <= -0.07623786949580638 ; 29 ; 0.0333 ; 0.03448275862068988 
+3) ; X1 <= -0.4935490030943499 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+3) ; X1 > -0.4935490030943499 ; 21 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; 0.1559*X1+0.2033*X2 > -0.07623786949580638 ; 27 ; 0.192 ; 0.25925925925925947 
+3) ; X2 <= 0.3494425945942631 ; 13 ; 0.2485 ; 0.4615384615384618 ; *
+3) ; X2 > 0.3494425945942631 ; 14 ; 0.0663 ; 0.07142857142857165 ; *
+1) ; 0.6198*X1+0.6615*X2 > -0.10969906394749075 ; 94 ; 0.1412 ; 0.8297872340425534 
+2) ; 0.1531*X1+0.1219*X2 <= -0.015960992177624672 ; 23 ; 0.2382 ; 0.6086956521739133 
+3) ; 0.8666*X1+1.029*X2 <= 0.14937677648315273 ; 15 ; 0.24 ; 0.40000000000000024 ; *
+3) ; 0.8666*X1+1.029*X2 > 0.14937677648315273 ; 8 ; 0.0 ; 1.0000000000000002 ; *
+2) ; 0.1531*X1+0.1219*X2 > -0.015960992177624672 ; 71 ; 0.0889 ; 0.9014084507042256 
+3) ; X1 <= 1.1938802011338525 ; 63 ; 0.0595 ; 0.9365079365079367 
+4) ; X2 <= 0.763538792272928 ; 49 ; 0.02 ; 0.9795918367346941 
+5) ; X1 <= -0.2739046533351594 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+5) ; X1 > -0.2739046533351594 ; 41 ; 0.0 ; 1.0000000000000002 ; *
+4) ; X2 > 0.763538792272928 ; 14 ; 0.1684 ; 0.7857142857142859 ; *
+3) ; X1 > 1.1938802011338525 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 16:38:14.542441
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2446 ; 0.5733333333333336 
+1) ; 0.6198*X1+0.6615*X2 <= -0.10969906394749063 ; 56 ; 0.1224 ; 0.14285714285714307 
+2) ; 0.1559*X1+0.2033*X2 <= -0.07623786949580662 ; 29 ; 0.0333 ; 0.03448275862068988 
+3) ; X1 <= -0.4935490030943499 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+3) ; X1 > -0.4935490030943499 ; 21 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; 0.1559*X1+0.2033*X2 > -0.07623786949580662 ; 27 ; 0.192 ; 0.25925925925925947 
+3) ; X2 <= 0.3494425945942631 ; 13 ; 0.2485 ; 0.4615384615384618 ; *
+3) ; X2 > 0.3494425945942631 ; 14 ; 0.0663 ; 0.07142857142857165 ; *
+1) ; 0.6198*X1+0.6615*X2 > -0.10969906394749063 ; 94 ; 0.1412 ; 0.8297872340425534 
+2) ; 0.1531*X1+0.1219*X2 <= -0.01596099217762465 ; 23 ; 0.2382 ; 0.6086956521739133 
+3) ; 0.8666*X1+1.029*X2 <= 0.14937677648315237 ; 15 ; 0.24 ; 0.40000000000000024 ; *
+3) ; 0.8666*X1+1.029*X2 > 0.14937677648315237 ; 8 ; 0.0 ; 1.0000000000000002 ; *
+2) ; 0.1531*X1+0.1219*X2 > -0.01596099217762465 ; 71 ; 0.0889 ; 0.9014084507042256 
+3) ; X1 <= 1.1938802011338525 ; 63 ; 0.0595 ; 0.9365079365079367 
+4) ; -0.262*X1+-0.3149*X2 <= -0.16422297509345896 ; 10 ; 0.21 ; 0.7000000000000002 ; *
+4) ; -0.262*X1+-0.3149*X2 > -0.16422297509345896 ; 53 ; 0.0185 ; 0.9811320754716983 
+5) ; 0.1169*X1+0.0902*X2 <= -0.002359735377924278 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+5) ; 0.1169*X1+0.0902*X2 > -0.002359735377924278 ; 45 ; 0.0 ; 1.0000000000000002 ; *
+3) ; X1 > 1.1938802011338525 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+File under consideration is: 2features.pickle_negative_labelling_9.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 17:05:56.936235
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.24 ; 0.6000000000000002 
+1) ; 0.6592*X1+0.5732*X2 <= -0.08412007281578662 ; 64 ; 0.1208 ; 0.14062500000000044 ; *
+1) ; 0.6592*X1+0.5732*X2 > -0.08412007281578662 ; 86 ; 0.0548 ; 0.9418604651162795 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 17:06:01.040644
+ordermatrix:
+[[0 1 0 0 0 1 1 1 1 1]
+ [0 0 1 1 0 1 1 1 1 1]
+ [0 0 0 1 0 1 0 1 1 1]
+ [0 0 0 0 0 1 0 0 1 1]
+ [1 1 1 1 0 1 1 1 1 1]
+ [0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 1 0 1 1 1]
+ [0 0 0 0 0 1 0 0 1 0]
+ [0 0 0 0 0 1 0 0 0 0]
+ [0 0 0 0 0 1 0 1 1 0]]
+ordermatrix:
+[[0 1 0 1 1 1 1]
+ [0 0 0 1 0 1 1]
+ [1 1 0 1 1 1 1]
+ [0 0 0 0 0 0 0]
+ [0 0 0 1 0 1 1]
+ [0 0 0 1 0 0 0]
+ [0 0 0 1 0 1 0]]
+ordermatrix:
+[[0 0 1 1 1]
+ [1 0 1 1 1]
+ [0 0 0 0 0]
+ [0 0 1 0 1]
+ [0 0 1 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 0]
+ [0 1 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.24 ; 0.6000000000000002 
+1) ; 0.6592*X1+0.5732*X2 <= -0.08412007281578646 ; 64 ; 0.1208 ; 0.14062500000000067 ; *
+1) ; 0.6592*X1+0.5732*X2 > -0.08412007281578646 ; 86 ; 0.0548 ; 0.9418604651162795 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 17:06:19.992599
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.24 ; 0.6000000000000002 
+1) ; 0.6592*X1+0.5732*X2 <= -0.08412007281578662 ; 64 ; 0.1208 ; 0.14062500000000022 ; *
+1) ; 0.6592*X1+0.5732*X2 > -0.08412007281578662 ; 86 ; 0.0548 ; 0.9418604651162793 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 17:06:24.244023
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.24 ; 0.6000000000000002 
+1) ; 0.6592*X1+0.5732*X2 <= -0.08412007281578646 ; 64 ; 0.1208 ; 0.14062500000000022 
+2) ; -0.0485*X1+-0.023*X2 <= 0.04534479250604097 ; 49 ; 0.0916 ; 0.10204081632653084 
+3) ; X1 <= -0.12581474141127563 ; 29 ; 0.0333 ; 0.03448275862068988 
+4) ; X1 <= -1.1898329072563991 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+4) ; X1 > -1.1898329072563991 ; 21 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; X1 > -0.12581474141127563 ; 20 ; 0.16 ; 0.20000000000000023 
+4) ; X1 <= 0.5012221174603876 ; 12 ; 0.2222 ; 0.33333333333333354 ; *
+4) ; X1 > 0.5012221174603876 ; 8 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; -0.0485*X1+-0.023*X2 > 0.04534479250604097 ; 15 ; 0.1956 ; 0.2666666666666669 ; *
+1) ; 0.6592*X1+0.5732*X2 > -0.08412007281578646 ; 86 ; 0.0548 ; 0.9418604651162793 
+2) ; -0.139*X1+-0.1529*X2 <= -0.10252887804092352 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+2) ; -0.139*X1+-0.1529*X2 > -0.10252887804092352 ; 78 ; 0.037 ; 0.9615384615384618 
+3) ; 0.0569*X1+0.0345*X2 <= -0.008378675900607991 ; 14 ; 0.1224 ; 0.8571428571428573 ; *
+3) ; 0.0569*X1+0.0345*X2 > -0.008378675900607991 ; 64 ; 0.0154 ; 0.9843750000000002 
+4) ; -0.0384*X1+-0.0418*X2 <= -0.01342381521739685 ; 18 ; 0.0525 ; 0.9444444444444446 
+5) ; X1 <= 0.08346490297769836 ; 10 ; 0.0 ; 1.0000000000000002 ; *
+5) ; X1 > 0.08346490297769836 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+4) ; -0.0384*X1+-0.0418*X2 > -0.01342381521739685 ; 46 ; 0.0 ; 1.0000000000000002 ; *
+File under consideration is: 2features.pickle_positive_labelling_0.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 17:34:37.585098
+ordermatrix:
+[[0 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1]
+ [0 0 0 1 1 1 1]
+ [0 0 0 0 1 1 1]
+ [0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.5266666666666668 
+1) ; 0.1363*X1+0.1841*X2 <= -0.03274121973026385 ; 70 ; 0.0539 ; 0.05714285714285781 ; *
+1) ; 0.1363*X1+0.1841*X2 > -0.03274121973026385 ; 80 ; 0.0586 ; 0.9375000000000004 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 17:34:46.487707
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1]
+ [0 1 0 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1]
+ [0 0 0 1 1 0 1 1]
+ [0 0 0 1 1 1 0 1]
+ [0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 1 1 1]
+ [0 0 0 1 1 1]
+ [0 0 1 0 1 1]
+ [0 0 1 1 0 1]
+ [0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 1 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.5266666666666668 
+1) ; 0.1363*X1+0.1841*X2 <= -0.03274121973026388 ; 70 ; 0.0539 ; 0.05714285714285803 ; *
+1) ; 0.1363*X1+0.1841*X2 > -0.03274121973026388 ; 80 ; 0.0586 ; 0.9375000000000004 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 17:34:58.333201
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.5266666666666668 
+1) ; 0.1363*X1+0.1841*X2 <= -0.03274121973026385 ; 70 ; 0.0539 ; 0.05714285714285736 
+2) ; X1 <= -1.4819144582238342 ; 8 ; 0.2344 ; 0.3750000000000002 ; *
+2) ; X1 > -1.4819144582238342 ; 62 ; 0.0159 ; 0.016129032258064738 
+3) ; X1 <= -1.0959030257837168 ; 15 ; 0.0622 ; 0.06666666666666689 ; *
+3) ; X1 > -1.0959030257837168 ; 47 ; 0.0 ; 2.220446049250313e-16 ; *
+1) ; 0.1363*X1+0.1841*X2 > -0.03274121973026385 ; 80 ; 0.0586 ; 0.9375000000000002 
+2) ; X2 <= 1.865425044678409 ; 72 ; 0.027 ; 0.9722222222222224 
+3) ; X1 <= -0.017174645723359545 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+3) ; X1 > -0.017174645723359545 ; 64 ; 0.0154 ; 0.9843750000000002 
+4) ; X2 <= 1.2422174170728297 ; 50 ; 0.0 ; 1.0000000000000002 ; *
+4) ; X2 > 1.2422174170728297 ; 14 ; 0.0663 ; 0.9285714285714288 ; *
+2) ; X2 > 1.865425044678409 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 17:35:01.313670
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.5266666666666668 
+1) ; 0.1363*X1+0.1841*X2 <= -0.03274121973026388 ; 70 ; 0.0539 ; 0.05714285714285736 
+2) ; X1 <= -1.4819144582238342 ; 8 ; 0.2344 ; 0.3750000000000002 ; *
+2) ; X1 > -1.4819144582238342 ; 62 ; 0.0159 ; 0.016129032258064738 
+3) ; -0.0169*X1+-0.0265*X2 <= 0.0484587555097179 ; 50 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; -0.0169*X1+-0.0265*X2 > 0.0484587555097179 ; 12 ; 0.0764 ; 0.08333333333333355 ; *
+1) ; 0.1363*X1+0.1841*X2 > -0.03274121973026388 ; 80 ; 0.0586 ; 0.9375000000000002 
+2) ; X2 <= 1.865425044678409 ; 72 ; 0.027 ; 0.9722222222222224 
+3) ; 0.052*X1+-0.0354*X2 <= 0.0043318550307147475 ; 24 ; 0.0764 ; 0.9166666666666669 
+4) ; -0.1741*X1+0.104*X2 <= 0.03748810484676392 ; 16 ; 0.1094 ; 0.8750000000000002 
+5) ; X1 <= 0.26701005470502925 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+5) ; X1 > 0.26701005470502925 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+4) ; -0.1741*X1+0.104*X2 > 0.03748810484676392 ; 8 ; 0.0 ; 1.0000000000000002 ; *
+3) ; 0.052*X1+-0.0354*X2 > 0.0043318550307147475 ; 48 ; 0.0 ; 1.0000000000000002 ; *
+2) ; X2 > 1.865425044678409 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+File under consideration is: 2features.pickle_positive_labelling_1.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 18:03:23.811990
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1]
+ [0 0 0 1 1 1 1]
+ [0 0 0 0 1 1 1]
+ [0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.49333333333333357 
+1) ; 0.2191*X1+0.1458*X2 <= 0.02871112141041347 ; 82 ; 0.0977 ; 0.10975609756097605 ; *
+1) ; 0.2191*X1+0.1458*X2 > 0.02871112141041347 ; 68 ; 0.0422 ; 0.9558823529411776 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 18:03:39.267452
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [1 0 1 1 1 1 1 1]
+ [1 0 0 1 1 1 1 1]
+ [1 1 1 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 1 1 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [1 0 1 1 1 1]
+ [1 1 0 1 1 1]
+ [0 0 0 0 1 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 1 0]]
+ordermatrix:
+[[0 1 1 1]
+ [1 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.49333333333333357 
+1) ; 0.2191*X1+0.1458*X2 <= 0.02871112141041343 ; 82 ; 0.0977 ; 0.10975609756097605 ; *
+1) ; 0.2191*X1+0.1458*X2 > 0.02871112141041343 ; 68 ; 0.0422 ; 0.9558823529411774 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 18:03:51.193039
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.49333333333333357 
+1) ; 0.2191*X1+0.1458*X2 <= 0.02871112141041347 ; 82 ; 0.0977 ; 0.10975609756097583 
+2) ; X2 <= 0.09139247259966966 ; 74 ; 0.0745 ; 0.08108108108108131 
+3) ; X2 <= -0.7499785667280698 ; 36 ; 0.1389 ; 0.16666666666666688 
+4) ; X2 <= -1.434982122517655 ; 10 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; X2 > -1.434982122517655 ; 26 ; 0.1775 ; 0.230769230769231 
+5) ; X2 <= -1.0329632021299942 ; 9 ; 0.2469 ; 0.44444444444444464 ; *
+5) ; X2 > -1.0329632021299942 ; 17 ; 0.1038 ; 0.11764705882352963 
+6) ; X1 <= -0.7044692844520677 ; 9 ; 0.0 ; 2.220446049250313e-16 ; *
+6) ; X1 > -0.7044692844520677 ; 8 ; 0.1875 ; 0.2500000000000002 ; *
+3) ; X2 > -0.7499785667280698 ; 38 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; X2 > 0.09139247259966966 ; 8 ; 0.2344 ; 0.3750000000000002 ; *
+1) ; 0.2191*X1+0.1458*X2 > 0.02871112141041347 ; 68 ; 0.0422 ; 0.9558823529411767 
+2) ; X1 <= 1.4491027508031675 ; 55 ; 0.0179 ; 0.981818181818182 
+3) ; X2 <= 0.3005398434749479 ; 15 ; 0.0622 ; 0.9333333333333336 ; *
+3) ; X2 > 0.3005398434749479 ; 40 ; 0.0 ; 1.0000000000000002 ; *
+2) ; X1 > 1.4491027508031675 ; 13 ; 0.1302 ; 0.8461538461538464 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 18:03:55.596645
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.49333333333333357 
+1) ; 0.2191*X1+0.1458*X2 <= 0.02871112141041343 ; 82 ; 0.0977 ; 0.10975609756097583 
+2) ; X2 <= 0.09139247259966966 ; 74 ; 0.0745 ; 0.08108108108108131 
+3) ; 0.0783*X1+-0.1266*X2 <= 0.04520451172075028 ; 43 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; 0.0783*X1+-0.1266*X2 > 0.04520451172075028 ; 31 ; 0.1561 ; 0.1935483870967744 
+4) ; -0.2183*X1+0.3752*X2 <= -0.24596982045506485 ; 18 ; 0.0525 ; 0.055555555555555775 
+5) ; X1 <= -0.42003468430029584 ; 10 ; 0.0 ; 2.220446049250313e-16 ; *
+5) ; X1 > -0.42003468430029584 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+4) ; -0.2183*X1+0.3752*X2 > -0.24596982045506485 ; 13 ; 0.2367 ; 0.38461538461538486 ; *
+2) ; X2 > 0.09139247259966966 ; 8 ; 0.2344 ; 0.3750000000000002 ; *
+1) ; 0.2191*X1+0.1458*X2 > 0.02871112141041343 ; 68 ; 0.0422 ; 0.9558823529411767 
+2) ; -0.1039*X1+0.0838*X2 <= -0.06697117576157632 ; 17 ; 0.1453 ; 0.8235294117647061 
+3) ; X1 <= 1.4491027508031675 ; 9 ; 0.0988 ; 0.8888888888888891 ; *
+3) ; X1 > 1.4491027508031675 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+2) ; -0.1039*X1+0.0838*X2 > -0.06697117576157632 ; 51 ; 0.0 ; 1.0000000000000002 ; *
+File under consideration is: 2features.pickle_positive_labelling_2.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 18:32:24.899688
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1]
+ [0 0 0 1 1 1 1]
+ [0 0 0 0 1 1 1]
+ [0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2496 ; 0.5200000000000002 
+1) ; 0.1281*X1+0.2628*X2 <= -0.04480922622061981 ; 71 ; 0.0532 ; 0.05633802816901453 ; *
+1) ; 0.1281*X1+0.2628*X2 > -0.04480922622061981 ; 79 ; 0.0593 ; 0.9367088607594943 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 18:32:37.659018
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1]
+ [1 1 1 1 0 1 1 1 1]
+ [0 0 0 0 0 0 1 0 0]
+ [0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 1 1 0 1]
+ [0 0 0 0 0 1 1 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 1 1 1]
+ [0 0 0 1 1 1]
+ [1 1 1 0 1 1]
+ [0 0 0 0 0 0]
+ [0 0 0 0 1 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [1 1 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [1 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2496 ; 0.5200000000000002 
+1) ; 0.1281*X1+0.2628*X2 <= -0.044809226220619766 ; 71 ; 0.0532 ; 0.05633802816901453 ; *
+1) ; 0.1281*X1+0.2628*X2 > -0.044809226220619766 ; 79 ; 0.0593 ; 0.9367088607594946 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 18:32:50.469237
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2496 ; 0.5200000000000002 
+1) ; 0.1281*X1+0.2628*X2 <= -0.04480922622061981 ; 71 ; 0.0532 ; 0.05633802816901431 
+2) ; X1 <= -1.4843895597928078 ; 12 ; 0.1389 ; 0.16666666666666688 ; *
+2) ; X1 > -1.4843895597928078 ; 59 ; 0.0327 ; 0.033898305084745985 
+3) ; X2 <= -0.23107907333655658 ; 51 ; 0.0192 ; 0.019607843137255124 
+4) ; X2 <= -0.7802606451899723 ; 17 ; 0.0554 ; 0.05882352941176493 
+5) ; X1 <= -0.9035020208455359 ; 9 ; 0.0 ; 2.220446049250313e-16 ; *
+5) ; X1 > -0.9035020208455359 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+4) ; X2 > -0.7802606451899723 ; 34 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; X2 > -0.23107907333655658 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+1) ; 0.1281*X1+0.2628*X2 > -0.04480922622061981 ; 79 ; 0.0593 ; 0.9367088607594939 
+2) ; X1 <= 1.3022299320241901 ; 68 ; 0.0285 ; 0.9705882352941179 
+3) ; X1 <= -0.029348427248351204 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+3) ; X1 > -0.029348427248351204 ; 60 ; 0.0164 ; 0.9833333333333335 
+4) ; X2 <= 1.0958630490870334 ; 52 ; 0.0 ; 1.0000000000000002 ; *
+4) ; X2 > 1.0958630490870334 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+2) ; X1 > 1.3022299320241901 ; 11 ; 0.1983 ; 0.7272727272727275 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 18:32:54.915595
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2496 ; 0.5200000000000002 
+1) ; 0.1281*X1+0.2628*X2 <= -0.044809226220619766 ; 71 ; 0.0532 ; 0.05633802816901431 
+2) ; -0.1008*X1+0.0542*X2 <= 0.08042122480569822 ; 60 ; 0.0322 ; 0.033333333333333555 
+3) ; X2 <= -0.23107907333655658 ; 52 ; 0.0189 ; 0.019230769230769454 
+4) ; X2 <= -0.7802606451899723 ; 19 ; 0.0499 ; 0.05263157894736864 
+5) ; X1 <= -0.9035020208455359 ; 11 ; 0.0 ; 2.220446049250313e-16 ; *
+5) ; X1 > -0.9035020208455359 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+4) ; X2 > -0.7802606451899723 ; 33 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; X2 > -0.23107907333655658 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+2) ; -0.1008*X1+0.0542*X2 > 0.08042122480569822 ; 11 ; 0.1488 ; 0.18181818181818205 ; *
+1) ; 0.1281*X1+0.2628*X2 > -0.044809226220619766 ; 79 ; 0.0593 ; 0.9367088607594939 
+2) ; -0.0355*X1+-0.0338*X2 <= -0.07582160503926749 ; 16 ; 0.1875 ; 0.7500000000000002 
+3) ; 0.1786*X1+0.3181*X2 <= 0.7081725342871631 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+3) ; 0.1786*X1+0.3181*X2 > 0.7081725342871631 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+2) ; -0.0355*X1+-0.0338*X2 > -0.07582160503926749 ; 63 ; 0.0156 ; 0.9841269841269843 
+3) ; X1 <= -0.029348427248351204 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+3) ; X1 > -0.029348427248351204 ; 55 ; 0.0 ; 1.0000000000000002 ; *
+File under consideration is: 2features.pickle_positive_labelling_3.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 19:00:47.214855
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 1 1 1]
+ [0 0 0 1 1 1]
+ [0 0 0 0 1 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2498 ; 0.5133333333333335 
+1) ; 0.2689*X1+0.0928*X2 <= -0.02996301545861932 ; 73 ; 0.0638 ; 0.06849315068493195 ; *
+1) ; 0.2689*X1+0.0928*X2 > -0.02996301545861932 ; 77 ; 0.0607 ; 0.9350649350649355 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 19:00:59.622661
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1 1]
+ [0 0 1 0 1 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 1 1 1]
+ [0 0 0 1 1 1]
+ [0 0 0 0 1 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2498 ; 0.5133333333333335 
+1) ; 0.2689*X1+0.0928*X2 <= -0.029963015458619333 ; 73 ; 0.0638 ; 0.06849315068493195 ; *
+1) ; 0.2689*X1+0.0928*X2 > -0.029963015458619333 ; 77 ; 0.0607 ; 0.9350649350649355 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 19:01:12.437869
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2498 ; 0.5133333333333335 
+1) ; 0.2689*X1+0.0928*X2 <= -0.02996301545861932 ; 73 ; 0.0638 ; 0.06849315068493173 
+2) ; X2 <= -1.1335920263782016 ; 17 ; 0.1453 ; 0.17647058823529435 
+3) ; X1 <= -1.314889005361342 ; 9 ; 0.0988 ; 0.11111111111111133 ; *
+3) ; X1 > -1.314889005361342 ; 8 ; 0.1875 ; 0.2500000000000002 ; *
+2) ; X2 > -1.1335920263782016 ; 56 ; 0.0344 ; 0.035714285714285934 
+3) ; X2 <= -0.14627762189096852 ; 48 ; 0.0204 ; 0.020833333333333554 
+4) ; X1 <= -1.2305015859742956 ; 11 ; 0.0826 ; 0.09090909090909113 ; *
+4) ; X1 > -1.2305015859742956 ; 37 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; X2 > -0.14627762189096852 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+1) ; 0.2689*X1+0.0928*X2 > -0.02996301545861932 ; 77 ; 0.0607 ; 0.9350649350649353 
+2) ; X1 <= 0.8150771979573186 ; 44 ; 0.0222 ; 0.9772727272727275 
+3) ; X1 <= 0.1436575715228759 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+3) ; X1 > 0.1436575715228759 ; 36 ; 0.0 ; 1.0000000000000002 ; *
+2) ; X1 > 0.8150771979573186 ; 33 ; 0.1065 ; 0.878787878787879 
+3) ; X1 <= 1.3696564497208206 ; 21 ; 0.1542 ; 0.8095238095238098 
+4) ; X1 <= 1.0407718504334098 ; 11 ; 0.0826 ; 0.9090909090909093 ; *
+4) ; X1 > 1.0407718504334098 ; 10 ; 0.21 ; 0.7000000000000002 ; *
+3) ; X1 > 1.3696564497208206 ; 12 ; 0.0 ; 1.0000000000000002 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 19:01:15.933594
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2498 ; 0.5133333333333335 
+1) ; 0.2689*X1+0.0928*X2 <= -0.029963015458619333 ; 73 ; 0.0638 ; 0.06849315068493173 
+2) ; X2 <= -1.1335920263782016 ; 17 ; 0.1453 ; 0.17647058823529435 
+3) ; X1 <= -1.314889005361342 ; 9 ; 0.0988 ; 0.11111111111111133 ; *
+3) ; X1 > -1.314889005361342 ; 8 ; 0.1875 ; 0.2500000000000002 ; *
+2) ; X2 > -1.1335920263782016 ; 56 ; 0.0344 ; 0.035714285714285934 
+3) ; X2 <= -0.14627762189096852 ; 48 ; 0.0204 ; 0.020833333333333554 
+4) ; -0.0393*X1+-0.0292*X2 <= 0.07487785615157361 ; 40 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; -0.0393*X1+-0.0292*X2 > 0.07487785615157361 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+3) ; X2 > -0.14627762189096852 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+1) ; 0.2689*X1+0.0928*X2 > -0.029963015458619333 ; 77 ; 0.0607 ; 0.9350649350649353 
+2) ; X1 <= 0.8150771979573186 ; 44 ; 0.0222 ; 0.9772727272727275 
+3) ; X1 <= 0.1436575715228759 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+3) ; X1 > 0.1436575715228759 ; 36 ; 0.0 ; 1.0000000000000002 ; *
+2) ; X1 > 0.8150771979573186 ; 33 ; 0.1065 ; 0.878787878787879 
+3) ; X1 <= 1.3696564497208206 ; 21 ; 0.1542 ; 0.8095238095238098 
+4) ; X1 <= 1.0407718504334098 ; 11 ; 0.0826 ; 0.9090909090909093 ; *
+4) ; X1 > 1.0407718504334098 ; 10 ; 0.21 ; 0.7000000000000002 ; *
+3) ; X1 > 1.3696564497208206 ; 12 ; 0.0 ; 1.0000000000000002 ; *
+File under consideration is: 2features.pickle_positive_labelling_4.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 19:30:02.533341
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2498 ; 0.4866666666666669 
+1) ; 0.2295*X1+0.1312*X2 <= 0.023820640785946035 ; 81 ; 0.079 ; 0.08641975308642019 ; *
+1) ; 0.2295*X1+0.1312*X2 > 0.023820640785946035 ; 69 ; 0.0416 ; 0.9565217391304359 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 19:30:12.815917
+ordermatrix:
+[[0 1 1 1 1 1 1]
+ [1 0 1 1 1 1 1]
+ [1 1 0 1 1 1 1]
+ [1 1 1 0 1 1 1]
+ [1 1 1 1 0 1 1]
+ [0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [1 0 1 1]
+ [1 1 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [1 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2498 ; 0.4866666666666669 
+1) ; 0.2295*X1+0.1312*X2 <= 0.023820640785946028 ; 81 ; 0.079 ; 0.08641975308642019 ; *
+1) ; 0.2295*X1+0.1312*X2 > 0.023820640785946028 ; 69 ; 0.0416 ; 0.9565217391304357 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 19:30:21.827889
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2498 ; 0.4866666666666669 
+1) ; 0.2295*X1+0.1312*X2 <= 0.023820640785946035 ; 81 ; 0.079 ; 0.08641975308641997 
+2) ; X1 <= -1.4235527910092203 ; 9 ; 0.1728 ; 0.22222222222222243 ; *
+2) ; X1 > -1.4235527910092203 ; 72 ; 0.0646 ; 0.06944444444444467 
+3) ; X2 <= -0.41613648246702944 ; 45 ; 0.0217 ; 0.022222222222222445 
+4) ; X1 <= -0.35235937998933115 ; 36 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; X1 > -0.35235937998933115 ; 9 ; 0.0988 ; 0.11111111111111133 ; *
+3) ; X2 > -0.41613648246702944 ; 27 ; 0.1262 ; 0.14814814814814836 
+4) ; X2 <= -0.3158646648278852 ; 8 ; 0.2344 ; 0.3750000000000002 ; *
+4) ; X2 > -0.3158646648278852 ; 19 ; 0.0499 ; 0.05263157894736864 
+5) ; X1 <= -0.23811149768130288 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+5) ; X1 > -0.23811149768130288 ; 11 ; 0.0 ; 2.220446049250313e-16 ; *
+1) ; 0.2295*X1+0.1312*X2 > 0.023820640785946035 ; 69 ; 0.0416 ; 0.956521739130435 
+2) ; X2 <= 1.3496746195130698 ; 57 ; 0.0 ; 1.0000000000000002 ; *
+2) ; X2 > 1.3496746195130698 ; 12 ; 0.1875 ; 0.7500000000000002 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 19:30:26.033166
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2498 ; 0.4866666666666669 
+1) ; 0.2295*X1+0.1312*X2 <= 0.023820640785946028 ; 81 ; 0.079 ; 0.08641975308641997 
+2) ; -0.1033*X1+0.1026*X2 <= 0.05239839803580712 ; 70 ; 0.0539 ; 0.05714285714285736 
+3) ; 0.0234*X1+-0.0353*X2 <= 0.012809001436974502 ; 45 ; 0.0217 ; 0.022222222222222445 
+4) ; -0.0801*X1+0.1141*X2 <= 0.005035986982822559 ; 35 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; -0.0801*X1+0.1141*X2 > 0.005035986982822559 ; 10 ; 0.09 ; 0.10000000000000023 ; *
+3) ; 0.0234*X1+-0.0353*X2 > 0.012809001436974502 ; 25 ; 0.1056 ; 0.12000000000000022 
+4) ; -0.3064*X1+0.5001*X2 <= -0.2685174562564691 ; 15 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; -0.3064*X1+0.5001*X2 > -0.2685174562564691 ; 10 ; 0.21 ; 0.3000000000000002 ; *
+2) ; -0.1033*X1+0.1026*X2 > 0.05239839803580712 ; 11 ; 0.1983 ; 0.27272727272727293 ; *
+1) ; 0.2295*X1+0.1312*X2 > 0.023820640785946028 ; 69 ; 0.0416 ; 0.956521739130435 
+2) ; X2 <= 1.3496746195130698 ; 57 ; 0.0 ; 1.0000000000000002 ; *
+2) ; X2 > 1.3496746195130698 ; 12 ; 0.1875 ; 0.7500000000000002 ; *
+File under consideration is: 2features.pickle_positive_labelling_5.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 20:00:45.673642
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 1 1 1]
+ [0 0 0 1 1 1]
+ [0 0 0 0 1 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5066666666666669 
+1) ; 0.2318*X1+0.1062*X2 <= 0.022414620754618177 ; 79 ; 0.1009 ; 0.11392405063291161 
+2) ; X2 <= 0.09506073704520765 ; 71 ; 0.0655 ; 0.07042253521126805 ; *
+2) ; X2 > 0.09506073704520765 ; 8 ; 0.25 ; 0.5000000000000011 ; *
+1) ; 0.2318*X1+0.1062*X2 > 0.022414620754618177 ; 71 ; 0.0532 ; 0.9436619718309865 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 20:00:58.342502
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [1 0 1 1 1 1 1 1]
+ [1 1 0 1 1 1 1 1]
+ [1 1 1 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [1 0 1 1 1]
+ [1 1 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [1 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5066666666666669 
+1) ; 0.2318*X1+0.1062*X2 <= 0.022414620754618163 ; 79 ; 0.1009 ; 0.11392405063291183 ; *
+1) ; 0.2318*X1+0.1062*X2 > 0.022414620754618163 ; 71 ; 0.0532 ; 0.9436619718309865 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 20:01:09.631500
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5066666666666669 
+1) ; 0.2318*X1+0.1062*X2 <= 0.022414620754618177 ; 79 ; 0.1009 ; 0.11392405063291161 
+2) ; X2 <= 0.09506073704520765 ; 71 ; 0.0655 ; 0.07042253521126783 
+3) ; X1 <= -0.47483968999971765 ; 41 ; 0.1071 ; 0.12195121951219534 
+4) ; X2 <= -0.726657388675553 ; 29 ; 0.0642 ; 0.06896551724137953 
+5) ; X2 <= -1.5080325829039332 ; 12 ; 0.1389 ; 0.16666666666666688 ; *
+5) ; X2 > -1.5080325829039332 ; 17 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; X2 > -0.726657388675553 ; 12 ; 0.1875 ; 0.2500000000000002 ; *
+3) ; X1 > -0.47483968999971765 ; 30 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; X2 > 0.09506073704520765 ; 8 ; 0.25 ; 0.5000000000000002 ; *
+1) ; 0.2318*X1+0.1062*X2 > 0.022414620754618177 ; 71 ; 0.0532 ; 0.9436619718309861 
+2) ; X2 <= 1.059829089302353 ; 50 ; 0.0196 ; 0.9800000000000002 
+3) ; X2 <= 0.08256111325389112 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+3) ; X2 > 0.08256111325389112 ; 42 ; 0.0 ; 1.0000000000000002 ; *
+2) ; X2 > 1.059829089302353 ; 21 ; 0.1224 ; 0.8571428571428573 
+3) ; X1 <= 1.1726480787304001 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+3) ; X1 > 1.1726480787304001 ; 13 ; 0.071 ; 0.9230769230769234 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 20:01:13.977193
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5066666666666669 
+1) ; 0.2318*X1+0.1062*X2 <= 0.022414620754618163 ; 79 ; 0.1009 ; 0.11392405063291161 
+2) ; -0.099*X1+0.1515*X2 <= 0.0373077148246556 ; 65 ; 0.044 ; 0.04615384615384638 
+3) ; 0.0537*X1+-0.1084*X2 <= 0.10224956534484672 ; 54 ; 0.0182 ; 0.01851851851851874 
+4) ; 0.0459*X1+-0.0521*X2 <= 0.012580786701179453 ; 46 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; 0.0459*X1+-0.0521*X2 > 0.012580786701179453 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+3) ; 0.0537*X1+-0.1084*X2 > 0.10224956534484672 ; 11 ; 0.1488 ; 0.18181818181818205 ; *
+2) ; -0.099*X1+0.1515*X2 > 0.0373077148246556 ; 14 ; 0.2449 ; 0.42857142857142877 ; *
+1) ; 0.2318*X1+0.1062*X2 > 0.022414620754618163 ; 71 ; 0.0532 ; 0.9436619718309861 
+2) ; X2 <= 1.059829089302353 ; 50 ; 0.0196 ; 0.9800000000000002 
+3) ; X2 <= 0.08256111325389112 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+3) ; X2 > 0.08256111325389112 ; 42 ; 0.0 ; 1.0000000000000002 ; *
+2) ; X2 > 1.059829089302353 ; 21 ; 0.1224 ; 0.8571428571428573 
+3) ; X1 <= 1.1726480787304001 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+3) ; X1 > 1.1726480787304001 ; 13 ; 0.071 ; 0.9230769230769234 ; *
+File under consideration is: 2features.pickle_zero_labelling_0.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 20:29:29.050521
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.47333333333333355 
+1) ; 0.1711*X1+0.2694*X2 <= -0.001063886434268707 ; 69 ; 0.0281 ; 0.028985507246377256 ; *
+1) ; 0.1711*X1+0.2694*X2 > -0.001063886434268707 ; 81 ; 0.1262 ; 0.8518518518518523 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 20:29:33.337401
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1]
+ [0 0 1 1 0 1 1 1 1 1]
+ [0 0 0 1 0 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 0 1 0 1 1 1]
+ [0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 1 0 1 1 1]
+ [0 0 0 0 0 1 0 0 1 1]
+ [0 0 0 0 0 1 0 0 0 1]
+ [0 0 0 0 0 1 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [0 0 1 0 1 1 1 1]
+ [0 0 0 1 1 1 1 1]
+ [0 0 0 0 1 0 1 1]
+ [0 0 0 0 0 0 0 0]
+ [0 0 0 0 1 0 1 1]
+ [0 0 0 0 1 0 0 1]
+ [0 0 0 0 1 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 1 1 1]
+ [0 0 0 1 0 1]
+ [0 0 0 0 0 0]
+ [0 0 0 1 0 1]
+ [0 0 0 1 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 0]
+ [0 0 1 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.47333333333333355 
+1) ; 0.1711*X1+0.2694*X2 <= -0.0010638864342688568 ; 69 ; 0.0281 ; 0.0289855072463777 ; *
+1) ; 0.1711*X1+0.2694*X2 > -0.0010638864342688568 ; 81 ; 0.1262 ; 0.8518518518518523 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 20:29:54.363173
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.47333333333333355 
+1) ; 0.1711*X1+0.2694*X2 <= -0.001063886434268707 ; 69 ; 0.0281 ; 0.028985507246377034 ; *
+1) ; 0.1711*X1+0.2694*X2 > -0.001063886434268707 ; 81 ; 0.1262 ; 0.8518518518518521 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 20:29:58.392451
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2493 ; 0.47333333333333355 
+1) ; 0.1711*X1+0.2694*X2 <= -0.0010638864342688568 ; 69 ; 0.0281 ; 0.028985507246377034 
+2) ; X2 <= 0.12759670958195057 ; 61 ; 0.0161 ; 0.016393442622951043 
+3) ; 0.0104*X1+0.0163*X2 <= -0.008067449282183815 ; 41 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; 0.0104*X1+0.0163*X2 > -0.008067449282183815 ; 20 ; 0.0475 ; 0.050000000000000225 
+4) ; X2 <= -0.2651128732266361 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+4) ; X2 > -0.2651128732266361 ; 12 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; X2 > 0.12759670958195057 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+1) ; 0.1711*X1+0.2694*X2 > -0.0010638864342688568 ; 81 ; 0.1262 ; 0.8518518518518521 
+2) ; X1 <= -0.9762139411489072 ; 9 ; 0.2469 ; 0.5555555555555558 ; *
+2) ; X1 > -0.9762139411489072 ; 72 ; 0.0988 ; 0.8888888888888891 
+3) ; -0.0313*X1+-0.0294*X2 <= -0.07457464970124078 ; 9 ; 0.2222 ; 0.6666666666666669 ; *
+3) ; -0.0313*X1+-0.0294*X2 > -0.07457464970124078 ; 63 ; 0.0731 ; 0.9206349206349208 
+4) ; 0.0332*X1+0.0946*X2 <= 0.006966392145765259 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+4) ; 0.0332*X1+0.0946*X2 > 0.006966392145765259 ; 55 ; 0.035 ; 0.9636363636363638 
+5) ; X1 <= 0.43785734436260304 ; 35 ; 0.0 ; 1.0000000000000002 ; *
+5) ; X1 > 0.43785734436260304 ; 20 ; 0.09 ; 0.9000000000000002 
+6) ; X1 <= 0.9499727745800179 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+6) ; X1 > 0.9499727745800179 ; 12 ; 0.0 ; 1.0000000000000002 ; *
+File under consideration is: 2features.pickle_zero_labelling_1.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 20:59:46.774163
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 1 1 1]
+ [0 0 0 1 1 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2484 ; 0.5400000000000003 
+1) ; 0.2181*X1+0.1643*X2 <= -0.03221728387203088 ; 67 ; 0.0815 ; 0.08955223880597059 ; *
+1) ; 0.2181*X1+0.1643*X2 > -0.03221728387203088 ; 83 ; 0.0871 ; 0.9036144578313258 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 21:00:06.325591
+ordermatrix:
+[[0 1 0 1 1 1 1]
+ [0 0 0 0 1 1 1]
+ [1 1 0 1 1 1 1]
+ [0 0 0 0 0 1 1]
+ [0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0]
+ [0 0 0 0 0 1 0]]
+ordermatrix:
+[[0 0 1 1 1]
+ [1 0 1 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2484 ; 0.5400000000000003 
+1) ; 0.2181*X1+0.1643*X2 <= -0.03221728387203095 ; 67 ; 0.0815 ; 0.08955223880597081 ; *
+1) ; 0.2181*X1+0.1643*X2 > -0.03221728387203095 ; 83 ; 0.0871 ; 0.9036144578313258 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 21:00:15.619148
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2484 ; 0.5400000000000003 
+1) ; 0.2181*X1+0.1643*X2 <= -0.03221728387203088 ; 67 ; 0.0815 ; 0.08955223880597037 
+2) ; X2 <= -1.7011963874145701 ; 10 ; 0.21 ; 0.3000000000000002 ; *
+2) ; X2 > -1.7011963874145701 ; 57 ; 0.0499 ; 0.05263157894736864 
+3) ; X1 <= -0.744166365979215 ; 28 ; 0.0957 ; 0.10714285714285736 
+4) ; X1 <= -1.0429714576074702 ; 20 ; 0.0475 ; 0.050000000000000225 
+5) ; X1 <= -1.814656295204705 ; 8 ; 0.1094 ; 0.12500000000000022 ; *
+5) ; X1 > -1.814656295204705 ; 12 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; X1 > -1.0429714576074702 ; 8 ; 0.1875 ; 0.2500000000000002 ; *
+3) ; X1 > -0.744166365979215 ; 29 ; 0.0 ; 2.220446049250313e-16 ; *
+1) ; 0.2181*X1+0.1643*X2 > -0.03221728387203088 ; 83 ; 0.0871 ; 0.9036144578313255 
+2) ; 0.0304*X1+0.0566*X2 <= -0.011903338211710447 ; 9 ; 0.2469 ; 0.5555555555555558 ; *
+2) ; 0.0304*X1+0.0566*X2 > -0.011903338211710447 ; 74 ; 0.0511 ; 0.9459459459459462 
+3) ; X1 <= -0.3783465022252375 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+3) ; X1 > -0.3783465022252375 ; 66 ; 0.0294 ; 0.96969696969697 
+4) ; X2 <= 1.4525648933553978 ; 58 ; 0.0169 ; 0.9827586206896554 
+5) ; X1 <= 1.573579421748333 ; 49 ; 0.0 ; 1.0000000000000002 ; *
+5) ; X1 > 1.573579421748333 ; 9 ; 0.0988 ; 0.8888888888888891 ; *
+4) ; X2 > 1.4525648933553978 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 21:00:21.011145
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2484 ; 0.5400000000000003 
+1) ; 0.2181*X1+0.1643*X2 <= -0.03221728387203095 ; 67 ; 0.0815 ; 0.08955223880597037 
+2) ; -0.1312*X1+-0.1236*X2 <= 0.2651744702522775 ; 55 ; 0.0179 ; 0.018181818181818403 
+3) ; X2 <= 0.12601007475351947 ; 42 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; X2 > 0.12601007475351947 ; 13 ; 0.071 ; 0.07692307692307715 ; *
+2) ; -0.1312*X1+-0.1236*X2 > 0.2651744702522775 ; 12 ; 0.2431 ; 0.4166666666666669 ; *
+1) ; 0.2181*X1+0.1643*X2 > -0.03221728387203095 ; 83 ; 0.0871 ; 0.9036144578313255 
+2) ; 0.0304*X1+0.0566*X2 <= -0.011903338211710537 ; 9 ; 0.2469 ; 0.5555555555555558 ; *
+2) ; 0.0304*X1+0.0566*X2 > -0.011903338211710537 ; 74 ; 0.0511 ; 0.9459459459459462 
+3) ; X1 <= -0.3783465022252375 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+3) ; X1 > -0.3783465022252375 ; 66 ; 0.0294 ; 0.96969696969697 
+4) ; -0.0348*X1+-0.0293*X2 <= -0.058308627404227736 ; 13 ; 0.1302 ; 0.8461538461538464 ; *
+4) ; -0.0348*X1+-0.0293*X2 > -0.058308627404227736 ; 53 ; 0.0 ; 1.0000000000000002 ; *
+File under consideration is: 2features.pickle_zero_labelling_2.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 21:28:57.805560
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2456 ; 0.5666666666666669 
+1) ; 0.2958*X1+0.1723*X2 <= -0.07159595659985174 ; 61 ; 0.0468 ; 0.049180327868853124 ; *
+1) ; 0.2958*X1+0.1723*X2 > -0.07159595659985174 ; 89 ; 0.0725 ; 0.921348314606742 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 21:29:07.017613
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1]
+ [0 1 0 1 1 1 1 1]
+ [0 0 0 0 1 0 1 1]
+ [0 0 0 0 0 0 1 1]
+ [0 0 0 1 1 0 1 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1]
+ [0 0 1 1 1]
+ [0 0 0 0 1]
+ [0 0 1 0 1]
+ [0 0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2456 ; 0.5666666666666669 
+1) ; 0.2958*X1+0.1723*X2 <= -0.07159595659985202 ; 61 ; 0.0468 ; 0.049180327868853124 ; *
+1) ; 0.2958*X1+0.1723*X2 > -0.07159595659985202 ; 89 ; 0.0725 ; 0.921348314606742 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 21:29:16.336849
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2456 ; 0.5666666666666669 
+1) ; 0.2958*X1+0.1723*X2 <= -0.07159595659985174 ; 61 ; 0.0468 ; 0.04918032786885268 
+2) ; X2 <= -0.4746081474014197 ; 27 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; X2 > -0.4746081474014197 ; 34 ; 0.0804 ; 0.08823529411764729 
+3) ; X2 <= -0.133799046359292 ; 10 ; 0.21 ; 0.3000000000000002 ; *
+3) ; X2 > -0.133799046359292 ; 24 ; 0.0 ; 2.220446049250313e-16 ; *
+1) ; 0.2958*X1+0.1723*X2 > -0.07159595659985174 ; 89 ; 0.0725 ; 0.9213483146067418 
+2) ; X1 <= 0.8732228245294306 ; 64 ; 0.0303 ; 0.9687500000000002 
+3) ; X1 <= 0.18264725871850948 ; 32 ; 0.0 ; 1.0000000000000002 ; *
+3) ; X1 > 0.18264725871850948 ; 32 ; 0.0586 ; 0.9375000000000002 
+4) ; X2 <= 0.3309457632635767 ; 20 ; 0.0 ; 1.0000000000000002 ; *
+4) ; X2 > 0.3309457632635767 ; 12 ; 0.1389 ; 0.8333333333333336 ; *
+2) ; X1 > 0.8732228245294306 ; 25 ; 0.16 ; 0.8000000000000003 
+3) ; X1 <= 1.4416579635385065 ; 14 ; 0.2041 ; 0.7142857142857145 ; *
+3) ; X1 > 1.4416579635385065 ; 11 ; 0.0826 ; 0.9090909090909093 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 21:29:19.296675
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2456 ; 0.5666666666666669 
+1) ; 0.2958*X1+0.1723*X2 <= -0.07159595659985202 ; 61 ; 0.0468 ; 0.04918032786885268 
+2) ; X2 <= -0.4746081474014197 ; 27 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; X2 > -0.4746081474014197 ; 34 ; 0.0804 ; 0.08823529411764729 
+3) ; -0.0124*X1+-0.1327*X2 <= 0.031521533843660146 ; 24 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; -0.0124*X1+-0.1327*X2 > 0.031521533843660146 ; 10 ; 0.21 ; 0.3000000000000002 ; *
+1) ; 0.2958*X1+0.1723*X2 > -0.07159595659985202 ; 89 ; 0.0725 ; 0.9213483146067418 
+2) ; X1 <= 0.8732228245294306 ; 64 ; 0.0303 ; 0.9687500000000002 
+3) ; -0.0516*X1+-0.0208*X2 <= -0.016707529813577232 ; 23 ; 0.0794 ; 0.9130434782608697 
+4) ; X1 <= 0.5052141621527737 ; 11 ; 0.1488 ; 0.8181818181818185 ; *
+4) ; X1 > 0.5052141621527737 ; 12 ; 0.0 ; 1.0000000000000002 ; *
+3) ; -0.0516*X1+-0.0208*X2 > -0.016707529813577232 ; 41 ; 0.0 ; 1.0000000000000002 ; *
+2) ; X1 > 0.8732228245294306 ; 25 ; 0.16 ; 0.8000000000000003 
+3) ; X1 <= 1.4416579635385065 ; 14 ; 0.2041 ; 0.7142857142857145 ; *
+3) ; X1 > 1.4416579635385065 ; 11 ; 0.0826 ; 0.9090909090909093 ; *
+File under consideration is: 2features.pickle_zero_labelling_3.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 21:57:23.070346
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1]
+ [0 0 1 1 0 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 0 1 1]
+ [0 0 0 1 1 1]
+ [0 0 0 0 1 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2425 ; 0.41333333333333355 
+1) ; 0.2344*X1+0.1873*X2 <= 0.04495170347168961 ; 79 ; 0.0481 ; 0.05063291139240551 ; *
+1) ; 0.2344*X1+0.1873*X2 > 0.04495170347168961 ; 71 ; 0.1496 ; 0.8169014084507045 
+2) ; X2 <= -0.623241965828186 ; 8 ; 0.2344 ; 0.3750000000000011 ; *
+2) ; X2 > -0.623241965828186 ; 63 ; 0.1109 ; 0.8730158730158737 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 21:57:36.765123
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1 1 1]
+ [0 0 1 1 0 1 1 1 1 1 1]
+ [0 0 0 1 0 0 1 0 1 1 1]
+ [0 0 0 0 0 0 1 0 1 1 1]
+ [0 1 1 1 0 1 1 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 1 0 1 1 1]
+ [0 0 0 0 0 0 1 0 0 1 1]
+ [0 0 0 0 0 0 1 0 0 0 1]
+ [0 0 0 0 0 0 1 0 0 1 0]]
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [0 0 1 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1]
+ [0 1 1 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 1 0 1]
+ [0 0 0 0 0 1 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 0 1 1 1]
+ [0 1 0 1 1 1]
+ [0 0 0 0 1 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 1 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2425 ; 0.41333333333333355 
+1) ; 0.2344*X1+0.1873*X2 <= 0.044951703471689565 ; 79 ; 0.0481 ; 0.05063291139240551 ; *
+1) ; 0.2344*X1+0.1873*X2 > 0.044951703471689565 ; 71 ; 0.1496 ; 0.8169014084507045 
+2) ; X2 <= -0.623241965828186 ; 8 ; 0.2344 ; 0.37500000000000133 ; *
+2) ; X2 > -0.623241965828186 ; 63 ; 0.1109 ; 0.8730158730158737 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 21:57:58.952421
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2425 ; 0.41333333333333355 
+1) ; 0.2344*X1+0.1873*X2 <= 0.04495170347168961 ; 79 ; 0.0481 ; 0.050632911392405285 
+2) ; 0.0296*X1+0.0289*X2 <= -0.03221365807980166 ; 34 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; 0.0296*X1+0.0289*X2 > -0.03221365807980166 ; 45 ; 0.081 ; 0.08888888888888911 
+3) ; X1 <= -0.6560502725324928 ; 12 ; 0.1389 ; 0.16666666666666688 ; *
+3) ; X1 > -0.6560502725324928 ; 33 ; 0.0569 ; 0.06060606060606083 
+4) ; X1 <= 0.14387158394508137 ; 20 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; X1 > 0.14387158394508137 ; 13 ; 0.1302 ; 0.15384615384615408 ; *
+1) ; 0.2344*X1+0.1873*X2 > 0.04495170347168961 ; 71 ; 0.1496 ; 0.8169014084507045 
+2) ; X2 <= -0.623241965828186 ; 8 ; 0.2344 ; 0.3750000000000002 ; *
+2) ; X2 > -0.623241965828186 ; 63 ; 0.1109 ; 0.8730158730158732 
+3) ; X2 <= 1.1105702110118854 ; 45 ; 0.0425 ; 0.9555555555555558 
+4) ; 0.077*X1+0.1*X2 <= 0.04602688624119108 ; 12 ; 0.1389 ; 0.8333333333333336 ; *
+4) ; 0.077*X1+0.1*X2 > 0.04602688624119108 ; 33 ; 0.0 ; 1.0000000000000002 ; *
+3) ; X2 > 1.1105702110118854 ; 18 ; 0.2222 ; 0.6666666666666669 
+4) ; X2 <= 1.594872233692028 ; 8 ; 0.25 ; 0.5000000000000002 ; *
+4) ; X2 > 1.594872233692028 ; 10 ; 0.16 ; 0.8000000000000003 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 21:58:02.872277
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2425 ; 0.41333333333333355 
+1) ; 0.2344*X1+0.1873*X2 <= 0.044951703471689565 ; 79 ; 0.0481 ; 0.050632911392405285 
+2) ; 0.0296*X1+0.0289*X2 <= -0.03221365807980168 ; 34 ; 0.0 ; 2.220446049250313e-16 ; *
+2) ; 0.0296*X1+0.0289*X2 > -0.03221365807980168 ; 45 ; 0.081 ; 0.08888888888888911 
+3) ; -0.1228*X1+-0.1084*X2 <= 0.08096192925468518 ; 36 ; 0.0525 ; 0.055555555555555775 
+4) ; X2 <= -0.08076190034821387 ; 15 ; 0.0 ; 2.220446049250313e-16 ; *
+4) ; X2 > -0.08076190034821387 ; 21 ; 0.0862 ; 0.09523809523809545 
+5) ; X2 <= 0.44200308576365144 ; 12 ; 0.1389 ; 0.16666666666666688 ; *
+5) ; X2 > 0.44200308576365144 ; 9 ; 0.0 ; 2.220446049250313e-16 ; *
+3) ; -0.1228*X1+-0.1084*X2 > 0.08096192925468518 ; 9 ; 0.1728 ; 0.22222222222222243 ; *
+1) ; 0.2344*X1+0.1873*X2 > 0.044951703471689565 ; 71 ; 0.1496 ; 0.8169014084507045 
+2) ; X2 <= -0.623241965828186 ; 8 ; 0.2344 ; 0.3750000000000002 ; *
+2) ; X2 > -0.623241965828186 ; 63 ; 0.1109 ; 0.8730158730158732 
+3) ; 0.0228*X1+-0.1301*X2 <= -0.18279144589192703 ; 13 ; 0.2367 ; 0.6153846153846156 ; *
+3) ; 0.0228*X1+-0.1301*X2 > -0.18279144589192703 ; 50 ; 0.0564 ; 0.9400000000000002 
+4) ; X2 <= 0.6817932167391861 ; 33 ; 0.0294 ; 0.96969696969697 
+5) ; X2 <= -0.14384264324589152 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+5) ; X2 > -0.14384264324589152 ; 25 ; 0.0 ; 1.0000000000000002 ; *
+4) ; X2 > 0.6817932167391861 ; 17 ; 0.1038 ; 0.8823529411764708 
+5) ; -0.0592*X1+0.2343*X2 <= 0.18890685319662784 ; 8 ; 0.1875 ; 0.7500000000000002 ; *
+5) ; -0.0592*X1+0.2343*X2 > 0.18890685319662784 ; 9 ; 0.0 ; 1.0000000000000002 ; *
+File under consideration is: 2features.pickle_zero_labelling_4.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 22:26:23.819634
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2446 ; 0.5733333333333336 
+1) ; 0.2426*X1+0.1978*X2 <= -0.06870132026907219 ; 62 ; 0.0874 ; 0.09677419354838754 ; *
+1) ; 0.2426*X1+0.1978*X2 > -0.06870132026907219 ; 88 ; 0.0826 ; 0.9090909090909095 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 22:26:27.395177
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2446 ; 0.5733333333333336 
+1) ; 0.2426*X1+0.1978*X2 <= -0.06870132026907226 ; 62 ; 0.0874 ; 0.09677419354838754 ; *
+1) ; 0.2426*X1+0.1978*X2 > -0.06870132026907226 ; 88 ; 0.0826 ; 0.9090909090909095 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 22:26:31.764107
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2446 ; 0.5733333333333336 
+1) ; 0.2426*X1+0.1978*X2 <= -0.06870132026907219 ; 62 ; 0.0874 ; 0.09677419354838732 ; *
+1) ; 0.2426*X1+0.1978*X2 > -0.06870132026907219 ; 88 ; 0.0826 ; 0.9090909090909093 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 22:26:35.518940
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.2446 ; 0.5733333333333336 
+1) ; 0.2426*X1+0.1978*X2 <= -0.06870132026907226 ; 62 ; 0.0874 ; 0.09677419354838732 ; *
+1) ; 0.2426*X1+0.1978*X2 > -0.06870132026907226 ; 88 ; 0.0826 ; 0.9090909090909093 ; *
+File under consideration is: 2features.pickle_zero_labelling_5.csv
+Adding noise to train set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to validation set...
+Amount of noise added (in percentage of total): 0.05
+Adding noise to test set...
+Amount of noise added (in percentage of total): 0.05
+
+Constructed tree for local_global:
+
+started at 2023-06-15 22:54:39.195231
+ordermatrix:
+[[0 1 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1 1]
+ [0 0 0 0 1 1 1 1 1]
+ [0 0 0 0 0 1 1 1 1]
+ [0 0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 1 1]
+ [0 0 0 0 0 0 0 0 1]
+ [0 0 0 0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 1 1 1]
+ [0 0 0 1 1 1]
+ [0 0 0 0 1 1]
+ [0 0 0 0 0 1]
+ [0 0 0 0 0 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5000000000000002 
+1) ; 0.2313*X1+0.2369*X2 <= 0.03169824719325661 ; 79 ; 0.1009 ; 0.11392405063291183 ; *
+1) ; 0.2313*X1+0.2369*X2 > 0.03169824719325661 ; 71 ; 0.0655 ; 0.9295774647887333 ; *
+
+Constructed tree for not_local_global:
+
+started at 2023-06-15 22:54:52.400694
+ordermatrix:
+[[0 1 1 1 1 1 1 1]
+ [0 0 1 1 1 1 1 1]
+ [0 0 0 1 1 1 1 1]
+ [0 1 1 0 1 1 1 1]
+ [0 0 0 0 0 1 1 1]
+ [0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 1 0 1]
+ [0 0 0 0 0 1 0 0]]
+ordermatrix:
+[[0 1 1 1 1 1]
+ [0 0 1 1 1 1]
+ [0 1 0 1 1 1]
+ [0 0 0 0 1 1]
+ [0 0 0 0 0 0]
+ [0 0 0 0 1 0]]
+ordermatrix:
+[[0 1 1 1]
+ [0 0 1 1]
+ [0 0 0 1]
+ [0 0 0 0]]
+ordermatrix:
+[[0 1 1]
+ [0 0 1]
+ [0 0 0]]
+ordermatrix:
+[[0 1]
+ [0 0]]
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5000000000000002 
+1) ; 0.2313*X1+0.2369*X2 <= 0.03169824719325663 ; 79 ; 0.1009 ; 0.11392405063291183 ; *
+1) ; 0.2313*X1+0.2369*X2 > 0.03169824719325663 ; 71 ; 0.0655 ; 0.9295774647887333 ; *
+
+Constructed tree for local_not_global:
+
+started at 2023-06-15 22:55:05.393696
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5000000000000002 
+1) ; 0.2313*X1+0.2369*X2 <= 0.03169824719325661 ; 79 ; 0.1009 ; 0.11392405063291161 
+2) ; 0.0591*X1+0.0658*X2 <= -0.0053437744275740065 ; 68 ; 0.0681 ; 0.0735294117647061 
+3) ; X1 <= -1.5827296237892718 ; 10 ; 0.16 ; 0.20000000000000023 ; *
+3) ; X1 > -1.5827296237892718 ; 58 ; 0.049 ; 0.051724137931034704 
+4) ; X1 <= 0.4102663960361903 ; 48 ; 0.0204 ; 0.020833333333333554 
+5) ; 0.0315*X1+0.0099*X2 <= -0.013836254885804557 ; 35 ; 0.0 ; 2.220446049250313e-16 ; *
+5) ; 0.0315*X1+0.0099*X2 > -0.013836254885804557 ; 13 ; 0.071 ; 0.07692307692307715 ; *
+4) ; X1 > 0.4102663960361903 ; 10 ; 0.16 ; 0.20000000000000023 ; *
+2) ; 0.0591*X1+0.0658*X2 > -0.0053437744275740065 ; 11 ; 0.2314 ; 0.36363636363636387 ; *
+1) ; 0.2313*X1+0.2369*X2 > 0.03169824719325661 ; 71 ; 0.0655 ; 0.9295774647887326 
+2) ; X2 <= 1.5498783725860412 ; 52 ; 0.0189 ; 0.980769230769231 
+3) ; X2 <= 0.05220349976860139 ; 8 ; 0.1094 ; 0.8750000000000002 ; *
+3) ; X2 > 0.05220349976860139 ; 44 ; 0.0 ; 1.0000000000000002 ; *
+2) ; X2 > 1.5498783725860412 ; 19 ; 0.1662 ; 0.7894736842105265 
+3) ; X1 <= 0.5578819271633777 ; 11 ; 0.0826 ; 0.9090909090909093 ; *
+3) ; X1 > 0.5578819271633777 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+
+Constructed tree for not_local_not_global:
+
+started at 2023-06-15 22:55:09.953898
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node ; #data points ; impurity (Gini for classification, MSE for regression) ; average y_value (regression) or relative frequency of class 1 (classification) ; star (*) if node is leaf
+0) ; root ; 150 ; 0.25 ; 0.5000000000000002 
+1) ; 0.2313*X1+0.2369*X2 <= 0.03169824719325663 ; 79 ; 0.1009 ; 0.11392405063291161 
+2) ; 0.0591*X1+0.0658*X2 <= -0.005343774427574002 ; 68 ; 0.0681 ; 0.0735294117647061 
+3) ; X1 <= -1.5827296237892718 ; 10 ; 0.16 ; 0.20000000000000023 ; *
+3) ; X1 > -1.5827296237892718 ; 58 ; 0.049 ; 0.051724137931034704 
+4) ; 0.0646*X1+-0.0067*X2 <= 0.036316407985652596 ; 49 ; 0.02 ; 0.020408163265306343 
+5) ; X1 <= -0.318545837296432 ; 34 ; 0.0 ; 2.220446049250313e-16 ; *
+5) ; X1 > -0.318545837296432 ; 15 ; 0.0622 ; 0.06666666666666689 ; *
+4) ; 0.0646*X1+-0.0067*X2 > 0.036316407985652596 ; 9 ; 0.1728 ; 0.22222222222222243 ; *
+2) ; 0.0591*X1+0.0658*X2 > -0.005343774427574002 ; 11 ; 0.2314 ; 0.36363636363636387 ; *
+1) ; 0.2313*X1+0.2369*X2 > 0.03169824719325663 ; 71 ; 0.0655 ; 0.9295774647887326 
+2) ; -0.0356*X1+-0.0644*X2 <= -0.13254507079736194 ; 8 ; 0.2344 ; 0.6250000000000002 ; *
+2) ; -0.0356*X1+-0.0644*X2 > -0.13254507079736194 ; 63 ; 0.0307 ; 0.9682539682539685 
+3) ; 0.0765*X1+0.0667*X2 <= 0.02341661944309087 ; 9 ; 0.1728 ; 0.777777777777778 ; *
+3) ; 0.0765*X1+0.0667*X2 > 0.02341661944309087 ; 54 ; 0.0 ; 1.0000000000000002 ; *
+average of tables:
+[[[0.92108108 0.92275813 0.92035327 0.9137699  0.93242319]
+  [0.8972973  0.89910579 0.89528448 0.88925057 0.91062382]
+  [0.84172973 0.84593562 0.83980839 0.84400866 0.84978046]]
+
+ [[0.91711712 0.91802647 0.91629445 0.91648329 0.92038818]
+  [0.8972973  0.89910579 0.89528448 0.88925057 0.91062382]
+  [0.84108108 0.8440811  0.83858233 0.8470092  0.84196056]]
+
+ [[0.92108108 0.92275813 0.92035327 0.9137699  0.93242319]
+  [0.8972973  0.89910579 0.89528448 0.88925057 0.91062382]
+  [0.84335135 0.84703679 0.84128967 0.84872016 0.84775343]]
+
+ [[0.91711712 0.91802647 0.91629445 0.91648329 0.92038818]
+  [0.8972973  0.89910579 0.89528448 0.88925057 0.91062382]
+  [0.8427027  0.84518227 0.84006362 0.8517207  0.83993353]]]
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: local_global, datasets with 2 features and train set size: 150; results are averaged over all labellings of particular correlation type.}
+\label{table:experiments_artificial_local_global_2_features_150}
+\begin{tabular}{lrrrrr}
+\toprule
+{} &  Accuracy &        F1 &     Auroc &  Precision &    Recall \\
+\midrule
+Positive &  0.921081 &  0.922758 &  0.920353 &   0.913770 &  0.932423 \\
+Zero     &  0.897297 &  0.899106 &  0.895284 &   0.889251 &  0.910624 \\
+Negative &  0.841730 &  0.845936 &  0.839808 &   0.844009 &  0.849780 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: not_local_global, datasets with 2 features and train set size: 150; results are averaged over all labellings of particular correlation type.}
+\label{table:experiments_artificial_not_local_global_2_features_150}
+\begin{tabular}{lrrrrr}
+\toprule
+{} &  Accuracy &        F1 &     Auroc &  Precision &    Recall \\
+\midrule
+Positive &  0.917117 &  0.918026 &  0.916294 &   0.916483 &  0.920388 \\
+Zero     &  0.897297 &  0.899106 &  0.895284 &   0.889251 &  0.910624 \\
+Negative &  0.841081 &  0.844081 &  0.838582 &   0.847009 &  0.841961 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: local_not_global, datasets with 2 features and train set size: 150; results are averaged over all labellings of particular correlation type.}
+\label{table:experiments_artificial_local_not_global_2_features_150}
+\begin{tabular}{lrrrrr}
+\toprule
+{} &  Accuracy &        F1 &     Auroc &  Precision &    Recall \\
+\midrule
+Positive &  0.921081 &  0.922758 &  0.920353 &   0.913770 &  0.932423 \\
+Zero     &  0.897297 &  0.899106 &  0.895284 &   0.889251 &  0.910624 \\
+Negative &  0.843351 &  0.847037 &  0.841290 &   0.848720 &  0.847753 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: not_local_not_global, datasets with 2 features and train set size: 150; results are averaged over all labellings of particular correlation type.}
+\label{table:experiments_artificial_not_local_not_global_2_features_150}
+\begin{tabular}{lrrrrr}
+\toprule
+{} &  Accuracy &        F1 &     Auroc &  Precision &    Recall \\
+\midrule
+Positive &  0.917117 &  0.918026 &  0.916294 &   0.916483 &  0.920388 \\
+Zero     &  0.897297 &  0.899106 &  0.895284 &   0.889251 &  0.910624 \\
+Negative &  0.842703 &  0.845182 &  0.840064 &   0.851721 &  0.839934 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This is the table to do statistical significant testing on
+
+[[0.92275813 0.89910579 0.84593562]
+ [0.91802647 0.89910579 0.8440811 ]
+ [0.92275813 0.89910579 0.84703679]
+ [0.91802647 0.89910579 0.84518227]]
+R[write to console]: There were 44 warnings (use warnings() to see them)
+R[write to console]: 
+
+
+Script done on Thu 15 Jun 2023 10:55:16 PM CEST

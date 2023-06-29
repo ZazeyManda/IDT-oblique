@@ -1,0 +1,23 @@
+Script is gestart op di 23 mei 2023 20:28:07 CEST
+.Busy with generating datasets...
+Busy with generating labels...
+labelling for positive correlation is done...
+labelling for negative correlation is done...
+labelling for zero correlation is done.
+R[write to console]: Warning messages:
+
+R[write to console]: 1: 
+R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
+R[write to console]: 
+ 
+R[write to console]:  library ‘/usr/share/R/library’ contains no packages
+
+R[write to console]: 2: 
+R[write to console]: In (function (package, help, pos = 2, lib.loc = NULL, character.only = FALSE,  :
+R[write to console]: 
+ 
+R[write to console]:  library ‘/usr/share/R/library’ contains no packages
+
+
+Script is beëindigd op wo 24 mei 2023 01:41:21 CEST
+.

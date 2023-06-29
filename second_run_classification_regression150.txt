@@ -1,0 +1,697 @@
+Script started on Thu 01 Jun 2023 03:10:58 PM CEST
+File under consideration is: datasets/regression/Admission/0.Admission.csv
+
+Constructed tree for local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 2.98 - 0.72 
+1) - 0.0012*GRE Score+0.0039*TOEFL Score+0.0327*LOR+0.1126*CGPA+0.0288*Research <= 1.86 - 74 - 0.74 - 0.61 
+2) - 0.0027*GRE Score+0.0009*TOEFL Score+0.0313*LOR+0.1003*CGPA <= 1.8 - 20 - 0.14 - 0.52 
+3) - 0.0005*GRE Score+0.0077*TOEFL Score+0.0313*LOR+0.1074*CGPA <= 1.82 - 10 - 0.08 - 0.49 - *
+3) - 0.0005*GRE Score+0.0077*TOEFL Score+0.0313*LOR+0.1074*CGPA > 1.82 - 10 - 0.04 - 0.54 - *
+2) - 0.0027*GRE Score+0.0009*TOEFL Score+0.0313*LOR+0.1003*CGPA > 1.8 - 54 - 0.35 - 0.65 - *
+1) - 0.0012*GRE Score+0.0039*TOEFL Score+0.0327*LOR+0.1126*CGPA+0.0288*Research > 1.86 - 76 - 0.66 - 0.82 - *
+
+Constructed tree for not_local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 2.98 - 0.72 - *
+
+Constructed tree for local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 2.98 - 0.72 
+1) - 0.0012*GRE Score+0.0039*TOEFL Score+0.0327*LOR+0.1126*CGPA+0.0288*Research <= 1.86 - 74 - 0.74 - 0.61 
+2) - 0.0027*GRE Score+0.0009*TOEFL Score+0.0313*LOR+0.1003*CGPA <= 1.8 - 20 - 0.14 - 0.52 
+3) - 0.0005*GRE Score+0.0077*TOEFL Score+0.0313*LOR+0.1074*CGPA <= 1.82 - 10 - 0.08 - 0.49 - *
+3) - 0.0005*GRE Score+0.0077*TOEFL Score+0.0313*LOR+0.1074*CGPA > 1.82 - 10 - 0.04 - 0.54 - *
+2) - 0.0027*GRE Score+0.0009*TOEFL Score+0.0313*LOR+0.1003*CGPA > 1.8 - 54 - 0.35 - 0.65 
+3) - 0.0018*GRE Score+0.0121*LOR+0.0482*CGPA <= 0.99 - 33 - 0.15 - 0.62 
+4) - CGPA <= 8.18 - 17 - 0.09 - 0.64 - *
+4) - CGPA > 8.18 - 16 - 0.06 - 0.6 - *
+3) - 0.0018*GRE Score+0.0121*LOR+0.0482*CGPA > 0.99 - 21 - 0.12 - 0.7 
+4) - CGPA <= 8.48 - 11 - 0.02 - 0.73 - *
+4) - CGPA > 8.48 - 10 - 0.08 - 0.66 - *
+1) - 0.0012*GRE Score+0.0039*TOEFL Score+0.0327*LOR+0.1126*CGPA+0.0288*Research > 1.86 - 76 - 0.66 - 0.82 
+2) - 0.0049*TOEFL Score+0.0308*LOR+0.1088*CGPA+0.0507*Research <= 1.7 - 47 - 0.22 - 0.76 
+3) - 0.005*TOEFL Score+0.0347*LOR+0.0815*CGPA+0.0475*Research <= 1.42 - 27 - 0.14 - 0.73 
+4) - GRE Score <= 321.5 - 17 - 0.02 - 0.76 - *
+4) - GRE Score > 321.5 - 10 - 0.08 - 0.69 - *
+3) - 0.005*TOEFL Score+0.0347*LOR+0.0815*CGPA+0.0475*Research > 1.42 - 20 - 0.03 - 0.8 
+4) - 0.0034*GRE Score+0.0023*TOEFL Score+0.0204*LOR+0.0824*CGPA+0.0228*Research <= 2.16 - 10 - 0.01 - 0.79 - *
+4) - 0.0034*GRE Score+0.0023*TOEFL Score+0.0204*LOR+0.0824*CGPA+0.0228*Research > 2.16 - 10 - 0.01 - 0.82 - *
+2) - 0.0049*TOEFL Score+0.0308*LOR+0.1088*CGPA+0.0507*Research > 1.7 - 29 - 0.04 - 0.91 
+3) - 0.0004*GRE Score+0.0022*TOEFL Score+0.0039*LOR+0.1017*CGPA <= 1.34 - 10 - 0.0 - 0.87 - *
+3) - 0.0004*GRE Score+0.0022*TOEFL Score+0.0039*LOR+0.1017*CGPA > 1.34 - 19 - 0.01 - 0.93 - *
+
+Constructed tree for not_local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 2.98 - 0.72 
+1) - 0.0012*GRE Score+0.0039*TOEFL Score+0.0327*LOR+0.1126*CGPA+0.0288*Research <= 1.86 - 74 - 0.74 - 0.61 
+2) - 0.0028*GRE Score+0.0009*TOEFL Score+0.0313*LOR+0.1003*CGPA+-0.0003*Research <= 1.8 - 20 - 0.14 - 0.52 
+3) - 0.0006*GRE Score+0.004*TOEFL Score+0.0679*LOR+0.1711*CGPA+-0.1422*Research <= 2.06 - 10 - 0.04 - 0.48 - *
+3) - 0.0006*GRE Score+0.004*TOEFL Score+0.0679*LOR+0.1711*CGPA+-0.1422*Research > 2.06 - 10 - 0.07 - 0.56 - *
+2) - 0.0028*GRE Score+0.0009*TOEFL Score+0.0313*LOR+0.1003*CGPA+-0.0003*Research > 1.8 - 54 - 0.35 - 0.65 
+3) - 0.0024*GRE Score+-0.0029*TOEFL Score+0.0087*LOR+0.0534*CGPA+-0.0041*Research <= 0.9 - 34 - 0.16 - 0.62 
+4) - -0.0023*GRE Score+0.0046*TOEFL Score+-0.0119*LOR+-0.0853*CGPA+-0.0003*Research <= -0.98 - 10 - 0.03 - 0.57 - *
+4) - -0.0023*GRE Score+0.0046*TOEFL Score+-0.0119*LOR+-0.0853*CGPA+-0.0003*Research > -0.98 - 24 - 0.09 - 0.64 
+5) - 0.0031*GRE Score+-0.0066*TOEFL Score+-0.0171*LOR+0.0418*CGPA+0.0051*Research <= 0.55 - 10 - 0.05 - 0.62 - *
+5) - 0.0031*GRE Score+-0.0066*TOEFL Score+-0.0171*LOR+0.0418*CGPA+0.0051*Research > 0.55 - 14 - 0.02 - 0.66 - *
+3) - 0.0024*GRE Score+-0.0029*TOEFL Score+0.0087*LOR+0.0534*CGPA+-0.0041*Research > 0.9 - 20 - 0.12 - 0.69 
+4) - CGPA <= 8.48 - 10 - 0.02 - 0.73 - *
+4) - CGPA > 8.48 - 10 - 0.08 - 0.66 - *
+1) - 0.0012*GRE Score+0.0039*TOEFL Score+0.0327*LOR+0.1126*CGPA+0.0288*Research > 1.86 - 76 - 0.66 - 0.82 
+2) - -0.0015*GRE Score+0.0057*TOEFL Score+0.03*LOR+0.1254*CGPA+0.0566*Research <= 1.45 - 48 - 0.23 - 0.76 
+3) - -0.0023*GRE Score+0.0063*TOEFL Score+0.0329*LOR+0.1014*CGPA+0.0561*Research <= 0.98 - 18 - 0.1 - 0.71 - *
+3) - -0.0023*GRE Score+0.0063*TOEFL Score+0.0329*LOR+0.1014*CGPA+0.0561*Research > 0.98 - 30 - 0.06 - 0.79 
+4) - CGPA <= 8.66 - 11 - 0.01 - 0.76 - *
+4) - CGPA > 8.66 - 19 - 0.02 - 0.81 - *
+2) - -0.0015*GRE Score+0.0057*TOEFL Score+0.03*LOR+0.1254*CGPA+0.0566*Research > 1.45 - 28 - 0.03 - 0.91 
+3) - CGPA <= 9.25 - 11 - 0.0 - 0.88 - *
+3) - CGPA > 9.25 - 17 - 0.01 - 0.94 - *
+File under consideration is: datasets/regression/AutoMPG/1.AutoMPG.csv
+
+Constructed tree for local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 8320.63 - 23.14 - *
+
+Constructed tree for not_local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 8320.63 - 23.14 - *
+
+Constructed tree for local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 8320.63 - 23.14 
+1) - 0.6976*cylinders+0.0125*displacement+0.0174*horsepower+0.0061*weight+0.648*model year <= 83.01 - 79 - 1260.61 - 17.78 
+2) - 1.2983*cylinders+0.0133*displacement+0.0174*horsepower+0.0031*weight+0.3836*model year <= 49.69 - 31 - 132.92 - 14.13 
+3) - weight <= 2385.0 - 11 - 32.73 - 12.45 - *
+3) - weight > 2385.0 - 20 - 52.57 - 15.04 - *
+2) - 1.2983*cylinders+0.0133*displacement+0.0174*horsepower+0.0031*weight+0.3836*model year > 49.69 - 48 - 445.08 - 20.15 
+3) - 1.5542*cylinders+0.022*displacement+0.0077*horsepower+0.0054*weight+0.5662*model year <= 75.65 - 19 - 82.89 - 17.99 - *
+3) - 1.5542*cylinders+0.022*displacement+0.0077*horsepower+0.0054*weight+0.5662*model year > 75.65 - 29 - 216.67 - 21.56 
+4) - cylinders <= 5.5 - 18 - 118.29 - 20.59 - *
+4) - cylinders > 5.5 - 11 - 54.58 - 23.13 - *
+1) - 0.6976*cylinders+0.0125*displacement+0.0174*horsepower+0.0061*weight+0.648*model year > 83.01 - 71 - 2264.19 - 29.11 
+2) - 0.1406*horsepower+0.0069*weight+0.8379*model year <= 125.07 - 47 - 392.86 - 25.9 
+3) - horsepower <= 191.5 - 23 - 148.31 - 24.19 - *
+3) - horsepower > 191.5 - 24 - 112.38 - 27.54 - *
+2) - 0.1406*horsepower+0.0069*weight+0.8379*model year > 125.07 - 24 - 440.02 - 35.39 
+3) - 0.0037*displacement+0.2961*horsepower+0.9725*model year <= 140.33 - 12 - 36.89 - 32.33 - *
+3) - 0.0037*displacement+0.2961*horsepower+0.9725*model year > 140.33 - 12 - 178.65 - 38.45 - *
+
+Constructed tree for not_local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 8320.63 - 23.14 
+1) - 0.6976*cylinders+0.0125*displacement+0.0174*horsepower+0.0061*weight+0.648*model year <= 83.01 - 79 - 1260.61 - 17.78 
+2) - 1.2983*cylinders+0.0133*displacement+0.0174*horsepower+0.0031*weight+0.3836*model year <= 49.69 - 31 - 132.92 - 14.13 - *
+2) - 1.2983*cylinders+0.0133*displacement+0.0174*horsepower+0.0031*weight+0.3836*model year > 49.69 - 48 - 445.08 - 20.15 
+3) - 1.5542*cylinders+0.022*displacement+0.0077*horsepower+0.0054*weight+0.5662*model year <= 75.65 - 19 - 82.89 - 17.99 - *
+3) - 1.5542*cylinders+0.022*displacement+0.0077*horsepower+0.0054*weight+0.5662*model year > 75.65 - 29 - 216.67 - 21.56 - *
+1) - 0.6976*cylinders+0.0125*displacement+0.0174*horsepower+0.0061*weight+0.648*model year > 83.01 - 71 - 2264.19 - 29.11 
+2) - -1.1728*cylinders+-0.0375*displacement+0.1316*horsepower+0.0055*weight+0.8383*model year <= 104.99 - 47 - 392.86 - 25.9 - *
+2) - -1.1728*cylinders+-0.0375*displacement+0.1316*horsepower+0.0055*weight+0.8383*model year > 104.99 - 24 - 440.02 - 35.39 
+3) - -0.2004*displacement+0.315*horsepower+-0.0219*weight+1.12*model year <= 34.69 - 14 - 85.11 - 33.06 - *
+3) - -0.2004*displacement+0.315*horsepower+-0.0219*weight+1.12*model year > 34.69 - 10 - 171.78 - 38.66 - *
+File under consideration is: datasets/regression/Computer/2.Computer.csv
+
+Constructed tree for local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 49359937.87 - 2278.25 - *
+
+Constructed tree for not_local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 49359937.87 - 2278.25 - *
+
+Constructed tree for local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 49359937.87 - 2278.25 
+1) - 10.2232*SPEED+1.2602*HARD_DRIVE+32.74*RAM+112.6995*SCREEN+16.5447*CD+140.4092*MULTI+562.17*FIRM+0.8114*ADS+58.0758*TREND <= 4830.58 - 112 - 15152893.96 - 2023.98 
+2) - 7.0292*SPEED+0.9299*HARD_DRIVE+45.315*RAM+44.4524*SCREEN+43.4405*CD+117.6991*MULTI+339.449*FIRM+0.8301*ADS+41.2693*TREND <= 2760.12 - 61 - 4815832.07 - 1799.36 
+3) - 8.8575*SPEED+1.4907*HARD_DRIVE+13.6095*RAM+9.2334*SCREEN+85.1955*CD+77.7123*MULTI+352.0111*FIRM+1.0472*ADS+38.1261*TREND <= 2007.64 - 17 - 618448.0 - 1471.0 - *
+3) - 8.8575*SPEED+1.4907*HARD_DRIVE+13.6095*RAM+9.2334*SCREEN+85.1955*CD+77.7123*MULTI+352.0111*FIRM+1.0472*ADS+38.1261*TREND > 2007.64 - 44 - 1656245.73 - 1926.23 
+4) - 5.3653*SPEED+0.9066*HARD_DRIVE+9.2677*RAM+117.6683*CD+329.9675*FIRM+0.555*ADS+26.7815*TREND <= 1292.27 - 11 - 570042.91 - 1769.91 - *
+4) - 5.3653*SPEED+0.9066*HARD_DRIVE+9.2677*RAM+117.6683*CD+329.9675*FIRM+0.555*ADS+26.7815*TREND > 1292.27 - 33 - 727817.33 - 1978.33 - *
+2) - 7.0292*SPEED+0.9299*HARD_DRIVE+45.315*RAM+44.4524*SCREEN+43.4405*CD+117.6991*MULTI+339.449*FIRM+0.8301*ADS+41.2693*TREND > 2760.12 - 51 - 3578095.65 - 2292.65 
+3) - 0.6099*HARD_DRIVE+49.0788*RAM+33.7533*SCREEN+243.5426*MULTI+286.4757*FIRM+0.6869*ADS+37.3552*TREND <= 2304.14 - 33 - 964288.73 - 2177.91 
+4) - 2.2317*SPEED+0.4171*HARD_DRIVE+45.3983*RAM+30.101*SCREEN+1.8366*CD+161.1199*MULTI+170.4503*FIRM+0.8876*ADS+27.6065*TREND <= 1964.22 - 23 - 581807.48 - 2122.39 - *
+4) - 2.2317*SPEED+0.4171*HARD_DRIVE+45.3983*RAM+30.101*SCREEN+1.8366*CD+161.1199*MULTI+170.4503*FIRM+0.8876*ADS+27.6065*TREND > 1964.22 - 10 - 148540.4 - 2305.6 - *
+3) - 0.6099*HARD_DRIVE+49.0788*RAM+33.7533*SCREEN+243.5426*MULTI+286.4757*FIRM+0.6869*ADS+37.3552*TREND > 2304.14 - 18 - 1382898.0 - 2503.0 - *
+1) - 10.2232*SPEED+1.2602*HARD_DRIVE+32.74*RAM+112.6995*SCREEN+16.5447*CD+140.4092*MULTI+562.17*FIRM+0.8114*ADS+58.0758*TREND > 4830.58 - 38 - 5624740.55 - 3027.66 
+2) - 7.7099*SPEED+0.9542*HARD_DRIVE+9.4314*RAM+124.0727*SCREEN+387.2716*FIRM+0.7348*ADS+49.166*TREND <= 4365.86 - 23 - 704870.61 - 2866.87 - *
+2) - 7.7099*SPEED+0.9542*HARD_DRIVE+9.4314*RAM+124.0727*SCREEN+387.2716*FIRM+0.7348*ADS+49.166*TREND > 4365.86 - 15 - 3413508.4 - 3274.2 - *
+
+Constructed tree for not_local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 49359937.87 - 2278.25 
+1) - 10.2232*SPEED+1.2602*HARD_DRIVE+32.74*RAM+112.6995*SCREEN+16.5447*CD+140.4092*MULTI+562.17*FIRM+0.8114*ADS+58.0758*TREND <= 4830.58 - 112 - 15152893.96 - 2023.98 
+2) - 7.0292*SPEED+0.9299*HARD_DRIVE+45.315*RAM+44.4524*SCREEN+43.4405*CD+117.6991*MULTI+339.449*FIRM+0.8301*ADS+41.2693*TREND <= 2760.12 - 61 - 4815832.07 - 1799.36 
+3) - 8.8575*SPEED+1.4907*HARD_DRIVE+13.6095*RAM+9.2334*SCREEN+85.1955*CD+77.7123*MULTI+352.0111*FIRM+1.0472*ADS+38.1261*TREND <= 2007.64 - 17 - 618448.0 - 1471.0 - *
+3) - 8.8575*SPEED+1.4907*HARD_DRIVE+13.6095*RAM+9.2334*SCREEN+85.1955*CD+77.7123*MULTI+352.0111*FIRM+1.0472*ADS+38.1261*TREND > 2007.64 - 44 - 1656245.73 - 1926.23 
+4) - 4.7434*SPEED+0.9012*HARD_DRIVE+3.8044*RAM+-35.4047*SCREEN+142.5189*CD+-49.6849*MULTI+306.62*FIRM+0.5299*ADS+24.4148*TREND <= 684.07 - 14 - 600119.71 - 1787.86 - *
+4) - 4.7434*SPEED+0.9012*HARD_DRIVE+3.8044*RAM+-35.4047*SCREEN+142.5189*CD+-49.6849*MULTI+306.62*FIRM+0.5299*ADS+24.4148*TREND > 684.07 - 30 - 662988.8 - 1990.8 
+5) - -5.5084*SPEED+-0.6676*HARD_DRIVE+-12.0875*RAM+-85.643*SCREEN+-47.6116*CD+-115.7371*MULTI+-243.559*FIRM+-0.4396*ADS+-25.4924*TREND <= -2497.24 - 11 - 143280.0 - 1903.0 - *
+5) - -5.5084*SPEED+-0.6676*HARD_DRIVE+-12.0875*RAM+-85.643*SCREEN+-47.6116*CD+-115.7371*MULTI+-243.559*FIRM+-0.4396*ADS+-25.4924*TREND > -2497.24 - 19 - 385818.42 - 2041.63 - *
+2) - 7.0292*SPEED+0.9299*HARD_DRIVE+45.315*RAM+44.4524*SCREEN+43.4405*CD+117.6991*MULTI+339.449*FIRM+0.8301*ADS+41.2693*TREND > 2760.12 - 51 - 3578095.65 - 2292.65 
+3) - -0.3893*SPEED+0.5754*HARD_DRIVE+48.8041*RAM+29.9483*SCREEN+-22.5347*CD+249.6798*MULTI+274.5184*FIRM+0.6645*ADS+35.1831*TREND <= 2168.17 - 35 - 1033761.14 - 2188.71 
+4) - 2.6006*SPEED+0.4607*HARD_DRIVE+48.7109*RAM+31.8432*SCREEN+0.0366*CD+176.3015*MULTI+184.4327*FIRM+0.9069*ADS+30.7808*TREND <= 2145.99 - 24 - 588189.96 - 2125.79 
+5) - -1.111*SPEED+-0.3208*HARD_DRIVE+1.3887*RAM+18.1852*SCREEN+122.0121*CD+-58.8495*MULTI+27.6705*FIRM+-0.1739*ADS+-6.9593*TREND <= -33.58 - 10 - 286622.9 - 2073.9 - *
+5) - -1.111*SPEED+-0.3208*HARD_DRIVE+1.3887*RAM+18.1852*SCREEN+122.0121*CD+-58.8495*MULTI+27.6705*FIRM+-0.1739*ADS+-6.9593*TREND > -33.58 - 14 - 255405.71 - 2162.86 - *
+4) - 2.6006*SPEED+0.4607*HARD_DRIVE+48.7109*RAM+31.8432*SCREEN+0.0366*CD+176.3015*MULTI+184.4327*FIRM+0.9069*ADS+30.7808*TREND > 2145.99 - 11 - 143228.0 - 2326.0 - *
+3) - -0.3893*SPEED+0.5754*HARD_DRIVE+48.8041*RAM+29.9483*SCREEN+-22.5347*CD+249.6798*MULTI+274.5184*FIRM+0.6645*ADS+35.1831*TREND > 2168.17 - 16 - 1339234.0 - 2520.0 - *
+1) - 10.2232*SPEED+1.2602*HARD_DRIVE+32.74*RAM+112.6995*SCREEN+16.5447*CD+140.4092*MULTI+562.17*FIRM+0.8114*ADS+58.0758*TREND > 4830.58 - 38 - 5624740.55 - 3027.66 
+2) - 7.6522*SPEED+0.8437*HARD_DRIVE+10.446*RAM+116.6538*SCREEN+-169.1207*CD+-1.1246*MULTI+305.1826*FIRM+0.8342*ADS+40.3301*TREND <= 3961.61 - 25 - 1242690.0 - 2841.0 
+3) - 2.0941*SPEED+0.2739*HARD_DRIVE+29.2911*RAM+-7.7977*SCREEN+101.0497*CD+-6.7756*MULTI+84.4497*FIRM+2.0245*ADS+18.3668*TREND <= 1609.1 - 14 - 540067.5 - 2735.5 - *
+3) - 2.0941*SPEED+0.2739*HARD_DRIVE+29.2911*RAM+-7.7977*SCREEN+101.0497*CD+-6.7756*MULTI+84.4497*FIRM+2.0245*ADS+18.3668*TREND > 1609.1 - 11 - 348478.18 - 2975.27 - *
+2) - 7.6522*SPEED+0.8437*HARD_DRIVE+10.446*RAM+116.6538*SCREEN+-169.1207*CD+-1.1246*MULTI+305.1826*FIRM+0.8342*ADS+40.3301*TREND > 3961.61 - 13 - 1835965.08 - 3386.62 - *
+File under consideration is: datasets/regression/Wages/3.Wages.csv
+
+Constructed tree for local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 1847.66 - 5.69 - *
+
+Constructed tree for not_local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 1847.66 - 5.69 - *
+
+Constructed tree for local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 1847.66 - 5.69 
+1) - 0.5521*educ+0.0261*exper+0.1062*tenure+2.3179*male+0.6222*white+0.5138*numdep+0.5831*married <= 13.08 - 127 - 547.9 - 4.74 
+2) - 0.321*educ+0.0114*exper+0.0928*tenure+1.4496*male+0.1139*numdep+0.642*married <= 6.24 - 88 - 132.13 - 3.93 
+3) - 0.2173*educ+0.0088*exper+0.0617*tenure+0.3578*male <= 2.62 - 18 - 3.67 - 2.99 - *
+3) - 0.2173*educ+0.0088*exper+0.0617*tenure+0.3578*male > 2.62 - 70 - 108.73 - 4.17 
+4) - 0.1497*educ+0.0028*exper+0.0424*tenure+0.167*male <= 2.07 - 44 - 41.69 - 3.9 - *
+4) - 0.1497*educ+0.0028*exper+0.0424*tenure+0.167*male > 2.07 - 26 - 58.73 - 4.62 - *
+2) - 0.321*educ+0.0114*exper+0.0928*tenure+1.4496*male+0.1139*numdep+0.642*married > 6.24 - 39 - 224.94 - 6.58 
+3) - 0.3176*educ+0.0078*exper+0.083*tenure+1.9769*male+0.2282*numdep+1.4987*married <= 8.56 - 29 - 108.32 - 6.03 
+4) - tenure <= 2.5 - 10 - 12.96 - 4.84 - *
+4) - tenure > 2.5 - 19 - 73.7 - 6.66 - *
+3) - 0.3176*educ+0.0078*exper+0.083*tenure+1.9769*male+0.2282*numdep+1.4987*married > 8.56 - 10 - 82.01 - 8.19 - *
+1) - 0.5521*educ+0.0261*exper+0.1062*tenure+2.3179*male+0.6222*white+0.5138*numdep+0.5831*married > 13.08 - 23 - 549.8 - 10.95 
+2) - numdep <= 1.5 - 12 - 199.33 - 9.46 - *
+2) - numdep > 1.5 - 11 - 294.82 - 12.57 - *
+
+Constructed tree for not_local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 1847.66 - 5.69 
+1) - 0.5521*educ+0.0261*exper+0.1062*tenure+2.3179*male+0.6222*white+0.5138*numdep+0.5831*married <= 13.08 - 127 - 547.9 - 4.74 
+2) - 0.3217*educ+0.0115*exper+0.0925*tenure+1.4477*male+-0.078*white+0.1141*numdep+0.6419*married <= 6.18 - 88 - 132.13 - 3.93 
+3) - 0.197*educ+0.0063*exper+0.0595*tenure+0.1547*male+-0.1128*white+-0.1574*numdep+-0.118*married <= 1.99 - 25 - 10.55 - 3.09 - *
+3) - 0.197*educ+0.0063*exper+0.0595*tenure+0.1547*male+-0.1128*white+-0.1574*numdep+-0.118*married > 1.99 - 63 - 97.36 - 4.26 - *
+2) - 0.3217*educ+0.0115*exper+0.0925*tenure+1.4477*male+-0.078*white+0.1141*numdep+0.6419*married > 6.18 - 39 - 224.94 - 6.58 
+3) - 0.3266*educ+0.0086*exper+0.0846*tenure+2.0315*male+-0.2375*white+0.2215*numdep+1.4993*married <= 8.5 - 29 - 108.32 - 6.03 
+4) - tenure <= 2.5 - 10 - 12.96 - 4.84 - *
+4) - tenure > 2.5 - 19 - 73.7 - 6.66 - *
+3) - 0.3266*educ+0.0086*exper+0.0846*tenure+2.0315*male+-0.2375*white+0.2215*numdep+1.4993*married > 8.5 - 10 - 82.01 - 8.19 - *
+1) - 0.5521*educ+0.0261*exper+0.1062*tenure+2.3179*male+0.6222*white+0.5138*numdep+0.5831*married > 13.08 - 23 - 549.8 - 10.95 
+2) - numdep <= 1.5 - 12 - 199.33 - 9.46 - *
+2) - numdep > 1.5 - 11 - 294.82 - 12.57 - *
+File under consideration is: datasets/regression/Windsor/4.Windsor.csv
+
+Constructed tree for local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 123237096464.83 - 69358.97 - *
+
+Constructed tree for not_local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 123237096464.83 - 69358.97 - *
+
+Constructed tree for local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 123237096464.83 - 69358.97 
+1) - 4.7245*lotsize+1450.6919*bedrooms+20816.0526*bathrooms+5082.691*stories+7875.0353*driveway+3523.4312*recreation+7468.282*fullbase+6131.0501*gasheat+8276.134*aircon+998.3822*garage+8804.9243*prefer <= 80634.27 - 86 - 12550955617.73 - 52620.29 
+2) - 2.2181*lotsize+1027.7701*bedrooms+7217.4552*bathrooms+5349.2176*stories+7323.796*driveway+11619.4643*recreation+2535.8857*fullbase+1681.5845*gasheat+8141.8994*aircon+2608.9446*prefer <= 46018.73 - 76 - 8264831550.99 - 50419.01 
+3) - 1.7252*lotsize+913.862*bedrooms+6438.5735*bathrooms+2780.3909*stories+6495.0356*driveway+11002.6083*recreation+3675.0102*fullbase+1182.321*gasheat+2285.7515*aircon+87.5361*garage+6398.0034*prefer <= 24129.89 - 20 - 1685638973.75 - 42007.25 
+4) - 4.4198*lotsize+6245.7866*bedrooms+6683.3891*stories+5415.6984*driveway+8468.7489*fullbase+13756.7754*aircon <= 43607.73 - 10 - 897372022.5 - 36824.5 - *
+4) - 4.4198*lotsize+6245.7866*bedrooms+6683.3891*stories+5415.6984*driveway+8468.7489*fullbase+13756.7754*aircon > 43607.73 - 10 - 251049000.0 - 47190.0 - *
+3) - 1.7252*lotsize+913.862*bedrooms+6438.5735*bathrooms+2780.3909*stories+6495.0356*driveway+11002.6083*recreation+3675.0102*fullbase+1182.321*gasheat+2285.7515*aircon+87.5361*garage+6398.0034*prefer > 24129.89 - 56 - 4658624821.43 - 53423.21 
+4) - 1289.5499*bathrooms+768.9595*stories+3490.2419*driveway+7700.0554*recreation+2331.1213*fullbase+3185.7099*gasheat+379.2407*aircon+854.6099*garage+5070.031*prefer <= 9546.26 - 44 - 3265872443.18 - 51798.86 
+5) - 231.4611*bedrooms+11965.2644*bathrooms+1340.4855*stories+8315.2909*driveway+4748.7822*fullbase+4524.6857*gasheat+1138.8817*aircon+1950.8792*garage <= 25085.06 - 20 - 1020977375.0 - 48752.5 
+6) - 0.6241*lotsize+2571.7011*bedrooms+3541.3328*stories+17640.4485*driveway+22307.9089*fullbase <= 31333.81 - 10 - 335356000.0 - 46820.0 - *
+6) - 0.6241*lotsize+2571.7011*bedrooms+3541.3328*stories+17640.4485*driveway+22307.9089*fullbase > 31333.81 - 10 - 610930250.0 - 50685.0 - *
+5) - 231.4611*bedrooms+11965.2644*bathrooms+1340.4855*stories+8315.2909*driveway+4748.7822*fullbase+4524.6857*gasheat+1138.8817*aircon+1950.8792*garage > 25085.06 - 24 - 1904616250.0 - 54337.5 
+6) - 0.2026*lotsize+1100.2231*bathrooms+942.9049*aircon+42.2226*garage <= 1971.16 - 10 - 977501000.0 - 51170.0 - *
+6) - 0.2026*lotsize+1100.2231*bathrooms+942.9049*aircon+42.2226*garage > 1971.16 - 14 - 755120000.0 - 56600.0 - *
+4) - 1289.5499*bathrooms+768.9595*stories+3490.2419*driveway+7700.0554*recreation+2331.1213*fullbase+3185.7099*gasheat+379.2407*aircon+854.6099*garage+5070.031*prefer > 9546.26 - 12 - 850977291.67 - 59379.17 - *
+2) - 2.2181*lotsize+1027.7701*bedrooms+7217.4552*bathrooms+5349.2176*stories+7323.796*driveway+11619.4643*recreation+2535.8857*fullbase+1681.5845*gasheat+8141.8994*aircon+2608.9446*prefer > 46018.73 - 10 - 1119025000.0 - 69350.0 - *
+1) - 4.7245*lotsize+1450.6919*bedrooms+20816.0526*bathrooms+5082.691*stories+7875.0353*driveway+3523.4312*recreation+7468.282*fullbase+6131.0501*gasheat+8276.134*aircon+998.3822*garage+8804.9243*prefer > 80634.27 - 64 - 54211699843.75 - 91851.56 
+2) - 5.6498*lotsize+2524.7152*bedrooms+22863.7169*bathrooms+4870.0486*stories+37977.6398*driveway+11631.7331*fullbase+6774.9839*gasheat+6935.1423*aircon+1862.6339*garage+8699.9748*prefer <= 162407.93 - 54 - 28383369814.81 - 84698.15 
+3) - 4.6486*lotsize+4416.3072*bedrooms+13808.4083*bathrooms+1848.8234*stories+27466.3061*driveway+5003.333*recreation+6351.5114*gasheat+8259.5402*aircon+4429.3094*prefer <= 112018.2 - 42 - 17083302857.14 - 79042.86 
+4) - 3.028*lotsize+1629.8626*bedrooms+7658.3783*bathrooms+29821.5659*driveway+8181.2617*fullbase+6544.0264*gasheat <= 66582.45 - 11 - 2453045454.55 - 63636.36 - *
+4) - 3.028*lotsize+1629.8626*bedrooms+7658.3783*bathrooms+29821.5659*driveway+8181.2617*fullbase+6544.0264*gasheat > 66582.45 - 31 - 11092827096.77 - 84509.68 
+5) - garage <= 1.5 - 21 - 5182992380.95 - 87847.62 
+6) - 4.8337*lotsize+9889.1965*bedrooms+8533.7118*bathrooms+15082.0162*fullbase+1922.5627*gasheat+10450.105*aircon+40110.0833*garage+7486.494*prefer <= 105191.46 - 11 - 1075561818.18 - 78827.27 - *
+6) - 4.8337*lotsize+9889.1965*bedrooms+8533.7118*bathrooms+15082.0162*fullbase+1922.5627*gasheat+10450.105*aircon+40110.0833*garage+7486.494*prefer > 105191.46 - 10 - 2227861000.0 - 97770.0 - *
+5) - garage > 1.5 - 10 - 5184500000.0 - 77500.0 - *
+3) - 4.6486*lotsize+4416.3072*bedrooms+13808.4083*bathrooms+1848.8234*stories+27466.3061*driveway+5003.333*recreation+6351.5114*gasheat+8259.5402*aircon+4429.3094*prefer > 112018.2 - 12 - 5255409166.67 - 104491.67 - *
+2) - 5.6498*lotsize+2524.7152*bedrooms+22863.7169*bathrooms+4870.0486*stories+37977.6398*driveway+11631.7331*fullbase+6774.9839*gasheat+6935.1423*aircon+1862.6339*garage+8699.9748*prefer > 162407.93 - 10 - 8143516000.0 - 130480.0 - *
+
+Constructed tree for not_local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 123237096464.83 - 69358.97 
+1) - 4.7245*lotsize+1450.6919*bedrooms+20816.0526*bathrooms+5082.691*stories+7875.0353*driveway+3523.4312*recreation+7468.282*fullbase+6131.0501*gasheat+8276.134*aircon+998.3822*garage+8804.9243*prefer <= 80634.27 - 86 - 12550955617.73 - 52620.29 
+2) - 2.3394*lotsize+1100.9343*bedrooms+7259.5362*bathrooms+5334.8523*stories+7421.4799*driveway+11992.5868*recreation+2374.7792*fullbase+1832.3797*gasheat+7894.5839*aircon+-660.8033*garage+2648.9688*prefer <= 33031.95 - 30 - 2263733957.5 - 44401.5 
+3) - 4.7785*lotsize+3467.1505*bedrooms+11995.483*bathrooms+6315.076*stories+8012.1776*driveway+0.0*recreation+8762.6725*fullbase+4425.4174*gasheat+11534.4308*aircon+-1592.8091*garage <= 50595.83 - 11 - 926245022.73 - 37249.55 - *
+3) - 4.7785*lotsize+3467.1505*bedrooms+11995.483*bathrooms+6315.076*stories+8012.1776*driveway+0.0*recreation+8762.6725*fullbase+4425.4174*gasheat+11534.4308*aircon+-1592.8091*garage > 50595.83 - 19 - 449086315.79 - 48542.11 - *
+2) - 2.3394*lotsize+1100.9343*bedrooms+7259.5362*bathrooms+5334.8523*stories+7421.4799*driveway+11992.5868*recreation+2374.7792*fullbase+1832.3797*gasheat+7894.5839*aircon+-660.8033*garage+2648.9688*prefer > 33031.95 - 56 - 7175164821.43 - 57023.21 
+3) - 0.4329*lotsize+71.7203*bedrooms+2445.9833*bathrooms+3392.5497*stories+9325.1828*driveway+12903.1547*recreation+-1953.1229*fullbase+-0.0*gasheat+8012.5651*aircon+-782.5996*garage+-843.1416*prefer <= 23608.06 - 42 - 3884144047.62 - 53804.76 
+4) - -1.0605*lotsize+74.0184*bedrooms+-8840.6098*bathrooms+-2502.2709*stories+-4720.2949*driveway+1119.0339*recreation+1386.9491*fullbase+-0.0*gasheat+-11649.6166*aircon+23.9956*garage+3878.5592*prefer <= -20281.1 - 30 - 2050723666.67 - 50693.33 
+5) - 1.2989*lotsize+1250.7907*bedrooms+16820.4241*bathrooms+4659.4387*stories+11308.8222*driveway+-5154.0255*recreation+-1696.8055*fullbase+-0.0*gasheat+9095.1954*aircon+1379.6883*garage+-4180.3927*prefer <= 45590.13 - 13 - 791521923.08 - 47715.38 - *
+5) - 1.2989*lotsize+1250.7907*bedrooms+16820.4241*bathrooms+4659.4387*stories+11308.8222*driveway+-5154.0255*recreation+-1696.8055*fullbase+-0.0*gasheat+9095.1954*aircon+1379.6883*garage+-4180.3927*prefer > 45590.13 - 17 - 1055755294.12 - 52970.59 - *
+4) - -1.0605*lotsize+74.0184*bedrooms+-8840.6098*bathrooms+-2502.2709*stories+-4720.2949*driveway+1119.0339*recreation+1386.9491*fullbase+-0.0*gasheat+-11649.6166*aircon+23.9956*garage+3878.5592*prefer > -20281.1 - 12 - 816916666.67 - 61583.33 - *
+3) - 0.4329*lotsize+71.7203*bedrooms+2445.9833*bathrooms+3392.5497*stories+9325.1828*driveway+12903.1547*recreation+-1953.1229*fullbase+-0.0*gasheat+8012.5651*aircon+-782.5996*garage+-843.1416*prefer > 23608.06 - 14 - 1550803571.43 - 66678.57 - *
+1) - 4.7245*lotsize+1450.6919*bedrooms+20816.0526*bathrooms+5082.691*stories+7875.0353*driveway+3523.4312*recreation+7468.282*fullbase+6131.0501*gasheat+8276.134*aircon+998.3822*garage+8804.9243*prefer > 80634.27 - 64 - 54211699843.75 - 91851.56 
+2) - 5.6547*lotsize+2448.9427*bedrooms+22839.2751*bathrooms+4998.9964*stories+38523.0058*driveway+-929.3213*recreation+12061.5779*fullbase+6867.9744*gasheat+6848.5925*aircon+1744.9237*garage+8614.4717*prefer <= 162778.84 - 54 - 28383369814.81 - 84698.15 
+3) - 4.7674*lotsize+4160.8803*bedrooms+13443.1504*bathrooms+2001.6032*stories+27379.2028*driveway+4774.6323*recreation+-334.2585*fullbase+5704.2089*gasheat+7905.0461*aircon+-1246.0137*garage+3745.9663*prefer <= 110020.53 - 44 - 18425601818.18 - 79836.36 
+4) - 3.0395*lotsize+6002.8843*bedrooms+4956.0406*bathrooms+-6068.9709*stories+32564.5921*driveway+-156.9565*recreation+7134.0245*fullbase+6199.9677*gasheat+-518.5724*aircon+-1128.7285*garage+-6849.7339*prefer <= 71534.29 - 33 - 9444696363.64 - 75136.36 
+5) - 4.2034*lotsize+-2754.9527*bedrooms+18587.5639*bathrooms+-1670.5808*stories+29888.2057*driveway+962.6179*recreation+12295.6259*fullbase+37512.4218*gasheat+3465.5321*aircon+-2870.6671*garage+-2992.7259*prefer <= 75546.36 - 16 - 3877500000.0 - 64400.0 - *
+5) - 4.2034*lotsize+-2754.9527*bedrooms+18587.5639*bathrooms+-1670.5808*stories+29888.2057*driveway+962.6179*recreation+12295.6259*fullbase+37512.4218*gasheat+3465.5321*aircon+-2870.6671*garage+-2992.7259*prefer > 75546.36 - 17 - 1987061176.47 - 85241.18 - *
+4) - 3.0395*lotsize+6002.8843*bedrooms+4956.0406*bathrooms+-6068.9709*stories+32564.5921*driveway+-156.9565*recreation+7134.0245*fullbase+6199.9677*gasheat+-518.5724*aircon+-1128.7285*garage+-6849.7339*prefer > 71534.29 - 11 - 6065025454.55 - 93936.36 - *
+3) - 4.7674*lotsize+4160.8803*bedrooms+13443.1504*bathrooms+2001.6032*stories+27379.2028*driveway+4774.6323*recreation+-334.2585*fullbase+5704.2089*gasheat+7905.0461*aircon+-1246.0137*garage+3745.9663*prefer > 110020.53 - 10 - 4341629000.0 - 106090.0 - *
+2) - 5.6547*lotsize+2448.9427*bedrooms+22839.2751*bathrooms+4998.9964*stories+38523.0058*driveway+-929.3213*recreation+12061.5779*fullbase+6867.9744*gasheat+6848.5925*aircon+1744.9237*garage+8614.4717*prefer > 162778.84 - 10 - 8143516000.0 - 130480.0 - *
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: local_global.}
+\label{table:experiments_regression_local_global}
+\begin{tabular}{lr}
+\toprule
+{} &           MSE \\
+\midrule
+Admission &  9.075800e-02 \\
+AutoMPG   &  6.435207e+01 \\
+Computer  &  3.409781e+05 \\
+Wages     &  1.410763e+01 \\
+Windsor   &  6.722265e+08 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: not_local_global.}
+\label{table:experiments_regression_not_local_global}
+\begin{tabular}{lr}
+\toprule
+{} &           MSE \\
+\midrule
+Admission &  9.403800e-02 \\
+AutoMPG   &  6.435207e+01 \\
+Computer  &  3.409781e+05 \\
+Wages     &  1.410763e+01 \\
+Windsor   &  6.722265e+08 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: local_not_global.}
+\label{table:experiments_regression_local_not_global}
+\begin{tabular}{lr}
+\toprule
+{} &           MSE \\
+\midrule
+Admission &  9.075800e-02 \\
+AutoMPG   &  1.286529e+01 \\
+Computer  &  8.841309e+04 \\
+Wages     &  1.040949e+01 \\
+Windsor   &  3.779118e+08 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: not_local_not_global.}
+\label{table:experiments_regression_not_local_not_global}
+\begin{tabular}{lr}
+\toprule
+{} &           MSE \\
+\midrule
+Admission &  9.411800e-02 \\
+AutoMPG   &  1.254793e+01 \\
+Computer  &  9.336351e+04 \\
+Wages     &  1.068194e+01 \\
+Windsor   &  3.938611e+08 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+[[[9.07580000e-02]
+  [6.43520661e+01]
+  [3.40978104e+05]
+  [1.41076282e+01]
+  [6.72226530e+08]]
+
+ [[9.40380000e-02]
+  [6.43520661e+01]
+  [3.40978104e+05]
+  [1.41076282e+01]
+  [6.72226530e+08]]
+
+ [[9.07580000e-02]
+  [1.28652893e+01]
+  [8.84130927e+04]
+  [1.04094899e+01]
+  [3.77911802e+08]]
+
+ [[9.41180000e-02]
+  [1.25479339e+01]
+  [9.33635135e+04]
+  [1.06819367e+01]
+  [3.93861096e+08]]]
+This is the table to do statistical significant testing on
+
+[[9.07580000e-02 6.43520661e+01 3.40978104e+05 1.41076282e+01
+  6.72226530e+08]
+ [9.40380000e-02 6.43520661e+01 3.40978104e+05 1.41076282e+01
+  6.72226530e+08]
+ [9.07580000e-02 1.28652893e+01 8.84130927e+04 1.04094899e+01
+  3.77911802e+08]
+ [9.41180000e-02 1.25479339e+01 9.33635135e+04 1.06819367e+01
+  3.93861096e+08]]
+
+
+
+
+###########################################################
+
+
+
+
+
+File under consideration is: datasets/classification/Bankrupt/0.Bankrupt.csv
+
+Constructed tree for local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.5 
+1) - 4.834*Debt ratio %+0.9887*Borrowing dependency+0.6909*Inventory and accounts receivable/Net value+0.0802*Current Liabilities/Liability+0.9781*Net Income to Total Assets <= 2.05 - 81 - 0.14 - 0.17 
+2) - 0.8231*Debt ratio %+5.4613*Net Income to Total Assets <= 1.94 - 61 - 0.03 - 0.03 - *
+2) - 0.8231*Debt ratio %+5.4613*Net Income to Total Assets > 1.94 - 20 - 0.24 - 0.5 - *
+1) - 4.834*Debt ratio %+0.9887*Borrowing dependency+0.6909*Inventory and accounts receivable/Net value+0.0802*Current Liabilities/Liability+0.9781*Net Income to Total Assets > 2.05 - 69 - 0.1 - 0.88 - *
+
+Constructed tree for not_local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.5 
+1) - 4.834*Debt ratio %+0.9887*Borrowing dependency+0.6909*Inventory and accounts receivable/Net value+0.0802*Current Liabilities/Liability+0.9781*Net Income to Total Assets <= 2.05 - 81 - 0.14 - 0.17 - *
+1) - 4.834*Debt ratio %+0.9887*Borrowing dependency+0.6909*Inventory and accounts receivable/Net value+0.0802*Current Liabilities/Liability+0.9781*Net Income to Total Assets > 2.05 - 69 - 0.1 - 0.88 - *
+
+Constructed tree for local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.5 
+1) - 4.834*Debt ratio %+0.9887*Borrowing dependency+0.6909*Inventory and accounts receivable/Net value+0.0802*Current Liabilities/Liability+0.9781*Net Income to Total Assets <= 2.05 - 81 - 0.14 - 0.17 
+2) - 0.8231*Debt ratio %+5.4613*Net Income to Total Assets <= 1.94 - 61 - 0.03 - 0.03 - *
+2) - 0.8231*Debt ratio %+5.4613*Net Income to Total Assets > 1.94 - 20 - 0.24 - 0.6 
+3) - Inventory and accounts receivable/Net value <= 0.4 - 6 - 0.0 - 1.0 - *
+3) - Inventory and accounts receivable/Net value > 0.4 - 14 - 0.24 - 0.43 
+4) - Borrowing dependency <= 0.62 - 3 - 0.0 - 1.0 - *
+4) - Borrowing dependency > 0.62 - 11 - 0.2 - 0.27 - *
+1) - 4.834*Debt ratio %+0.9887*Borrowing dependency+0.6909*Inventory and accounts receivable/Net value+0.0802*Current Liabilities/Liability+0.9781*Net Income to Total Assets > 2.05 - 69 - 0.1 - 0.88 
+2) - Current Liabilities/Liability <= 0.05 - 2 - 0.0 - 0.0 - *
+2) - Current Liabilities/Liability > 0.05 - 67 - 0.08 - 0.91 
+3) - 1.0788*Debt ratio %+0.0941*Borrowing dependency+0.0231*Inventory and accounts receivable/Net value+0.3885*Net Income to Total Assets <= 0.4 - 14 - 0.2 - 0.71 
+4) - 0.3113*Current Liabilities/Liability+22.231*Net Income to Total Assets <= 7.53 - 3 - 0.0 - 0.0 - *
+4) - 0.3113*Current Liabilities/Liability+22.231*Net Income to Total Assets > 7.53 - 11 - 0.08 - 0.91 - *
+3) - 1.0788*Debt ratio %+0.0941*Borrowing dependency+0.0231*Inventory and accounts receivable/Net value+0.3885*Net Income to Total Assets > 0.4 - 53 - 0.04 - 0.96 - *
+
+Constructed tree for not_local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.5 
+1) - 4.834*Debt ratio %+0.9887*Borrowing dependency+0.6909*Inventory and accounts receivable/Net value+0.0802*Current Liabilities/Liability+0.9781*Net Income to Total Assets <= 2.05 - 81 - 0.14 - 0.17 
+2) - -1.9475*Debt ratio %+-57.0349*Borrowing dependency+-7.7477*Inventory and accounts receivable/Net value+-0.3601*Current Liabilities/Liability+4.3362*Net Income to Total Assets <= -37.53 - 66 - 0.03 - 0.03 - *
+2) - -1.9475*Debt ratio %+-57.0349*Borrowing dependency+-7.7477*Inventory and accounts receivable/Net value+-0.3601*Current Liabilities/Liability+4.3362*Net Income to Total Assets > -37.53 - 15 - 0.16 - 0.8 - *
+1) - 4.834*Debt ratio %+0.9887*Borrowing dependency+0.6909*Inventory and accounts receivable/Net value+0.0802*Current Liabilities/Liability+0.9781*Net Income to Total Assets > 2.05 - 69 - 0.1 - 0.88 - *
+File under consideration is: datasets/classification/Compas/1.Compas.csv
+
+Constructed tree for local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.45 
+1) - 0.0096*age+0.0233*priors_count+0.07*c_charge_degree <= 1.02 - 124 - 0.24 - 0.38 - *
+1) - 0.0096*age+0.0233*priors_count+0.07*c_charge_degree > 1.02 - 26 - 0.16 - 0.81 - *
+
+Constructed tree for not_local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.45 - *
+
+Constructed tree for local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.45 
+1) - 0.0096*age+0.0233*priors_count+0.07*c_charge_degree <= 1.02 - 124 - 0.24 - 0.38 
+2) - age <= 78.5 - 55 - 0.18 - 0.24 - *
+2) - age > 78.5 - 69 - 0.25 - 0.49 
+3) - sex <= 0.5 - 15 - 0.22 - 0.67 
+4) - 0.0458*age+0.0032*priors_count+0.1753*c_charge_degree <= 4.04 - 6 - 0.22 - 0.33 - *
+4) - 0.0458*age+0.0032*priors_count+0.1753*c_charge_degree > 4.04 - 9 - 0.1 - 0.89 - *
+3) - sex > 0.5 - 54 - 0.25 - 0.44 
+4) - age <= 80.5 - 3 - 0.0 - 1.0 - *
+4) - age > 80.5 - 51 - 0.24 - 0.41 
+5) - 0.0014*age+0.0072*priors_count <= 0.16 - 48 - 0.25 - 0.44 
+6) - priors_count <= 1.5 - 27 - 0.22 - 0.33 
+7) - age <= 81.5 - 4 - 0.19 - 0.75 - *
+7) - age > 81.5 - 23 - 0.19 - 0.26 - *
+6) - priors_count > 1.5 - 21 - 0.24 - 0.57 
+7) - 0.0454*age+0.0371*priors_count <= 4.15 - 11 - 0.23 - 0.36 - *
+7) - 0.0454*age+0.0371*priors_count > 4.15 - 10 - 0.16 - 0.8 - *
+5) - 0.0014*age+0.0072*priors_count > 0.16 - 3 - 0.0 - 0.0 - *
+1) - 0.0096*age+0.0233*priors_count+0.07*c_charge_degree > 1.02 - 26 - 0.16 - 0.81 - *
+
+Constructed tree for not_local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.45 
+1) - 0.0096*age+-0.0974*sex+0.0246*priors_count+0.0762*c_charge_degree <= 0.91 - 113 - 0.23 - 0.35 - *
+1) - 0.0096*age+-0.0974*sex+0.0246*priors_count+0.0762*c_charge_degree > 0.91 - 37 - 0.17 - 0.78 - *
+File under consideration is: datasets/classification/Credit/2.Credit.csv
+
+Constructed tree for local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.5 
+1) - share <= 0.0 - 76 - 0.01 - 0.01 - *
+1) - share > 0.0 - 74 - 0.0 - 1.0 - *
+
+Constructed tree for not_local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.5 
+1) - share <= 0.0 - 76 - 0.01 - 0.01 - *
+1) - share > 0.0 - 74 - 0.0 - 1.0 - *
+
+Constructed tree for local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.5 
+1) - share <= 0.0 - 76 - 0.01 - 0.01 - *
+1) - share > 0.0 - 74 - 0.0 - 1.0 - *
+
+Constructed tree for not_local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.25 - 0.5 
+1) - share <= 0.0 - 76 - 0.01 - 0.01 - *
+1) - share > 0.0 - 74 - 0.0 - 1.0 - *
+File under consideration is: datasets/classification/Haberman/3.Haberman.csv
+
+Constructed tree for local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.2 - 0.27 - *
+
+Constructed tree for not_local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.2 - 0.27 - *
+
+Constructed tree for local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.2 - 0.27 - *
+
+Constructed tree for not_local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.2 - 0.27 - *
+File under consideration is: datasets/classification/Water/4.Water.csv
+
+Constructed tree for local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.11 - 0.12 - *
+
+Constructed tree for not_local_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.11 - 0.12 - *
+
+Constructed tree for local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.11 - 0.12 - *
+
+Constructed tree for not_local_not_global:
+
+Tree is traversed via depth-first traversal.
+Node level) splitting rule to current node - #data points - impurity (Gini for classification, MSE for regression) - average y_value (regression) or relative frequency of class 1 (classification) - star (*) if node is leaf
+0) - root - 150 - 0.11 - 0.12 - *
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: local_global.}
+\label{table:experiments_classification_local_global}
+\begin{tabular}{lrrr}
+\toprule
+{} &  Accuracy &        F1 &     Auroc \\
+\midrule
+Bankrupt &  0.789655 &  0.814590 &  0.789655 \\
+Compas   &  0.632220 &  0.387842 &  0.598618 \\
+Credit   &  0.975113 &  0.974478 &  0.975113 \\
+Haberman &  0.737179 &  0.000000 &  0.500000 \\
+Water    &  0.880526 &  0.000000 &  0.500000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: not_local_global.}
+\label{table:experiments_classification_not_local_global}
+\begin{tabular}{lrrr}
+\toprule
+{} &  Accuracy &        F1 &     Auroc \\
+\midrule
+Bankrupt &  0.803448 &  0.784906 &  0.803448 \\
+Compas   &  0.549405 &  0.000000 &  0.500000 \\
+Credit   &  0.975113 &  0.974478 &  0.975113 \\
+Haberman &  0.737179 &  0.000000 &  0.500000 \\
+Water    &  0.880526 &  0.000000 &  0.500000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: local_not_global.}
+\label{table:experiments_classification_local_not_global}
+\begin{tabular}{lrrr}
+\toprule
+{} &  Accuracy &        F1 &     Auroc \\
+\midrule
+Bankrupt &  0.813793 &  0.812500 &  0.813793 \\
+Compas   &  0.618630 &  0.487053 &  0.599133 \\
+Credit   &  0.975113 &  0.974478 &  0.975113 \\
+Haberman &  0.737179 &  0.000000 &  0.500000 \\
+Water    &  0.880526 &  0.000000 &  0.500000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Experiments run for algorithm: not_local_not_global.}
+\label{table:experiments_classification_not_local_not_global}
+\begin{tabular}{lrrr}
+\toprule
+{} &  Accuracy &        F1 &     Auroc \\
+\midrule
+Bankrupt &  0.824138 &  0.836013 &  0.824138 \\
+Compas   &  0.640430 &  0.474773 &  0.615272 \\
+Credit   &  0.975113 &  0.974478 &  0.975113 \\
+Haberman &  0.737179 &  0.000000 &  0.500000 \\
+Water    &  0.880526 &  0.000000 &  0.500000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+[[[0.78965517 0.81458967 0.78965517]
+  [0.63221971 0.38784166 0.59861835]
+  [0.97511312 0.97447796 0.97511312]
+  [0.73717949 0.         0.5       ]
+  [0.88052569 0.         0.5       ]]
+
+ [[0.80344828 0.78490566 0.80344828]
+  [0.54940544 0.         0.5       ]
+  [0.97511312 0.97447796 0.97511312]
+  [0.73717949 0.         0.5       ]
+  [0.88052569 0.         0.5       ]]
+
+ [[0.8137931  0.8125     0.8137931 ]
+  [0.61862967 0.48705255 0.5991332 ]
+  [0.97511312 0.97447796 0.97511312]
+  [0.73717949 0.         0.5       ]
+  [0.88052569 0.         0.5       ]]
+
+ [[0.82413793 0.83601286 0.82413793]
+  [0.64043035 0.47477254 0.61527247]
+  [0.97511312 0.97447796 0.97511312]
+  [0.73717949 0.         0.5       ]
+  [0.88052569 0.         0.5       ]]]
+This is the table to do statistical significant testing on
+
+[[0.81458967 0.38784166 0.97447796 0.         0.        ]
+ [0.78490566 0.         0.97447796 0.         0.        ]
+ [0.8125     0.48705255 0.97447796 0.         0.        ]
+ [0.83601286 0.47477254 0.97447796 0.         0.        ]]
+
+Script done on Thu 01 Jun 2023 03:30:16 PM CEST
